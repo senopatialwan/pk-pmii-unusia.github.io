@@ -17,9 +17,27 @@
 @endsection
 
 @section('body')
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
     @yield('content')
     
     @isset($slot)
         {{ $slot }}
     @endisset
+
+    <script src="{{ url(asset('assets/js/jquery-1.12.4.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/bootstrap.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/equal-height.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/jquery.appear.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/jquery.easing.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/jquery.magnific-popup.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/modernizr.custom.13711.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/jquery.backgroundMove.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/owl.carousel.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/count-to.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/wow.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/bootsnav.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/main.js')) }}"></script>
 @endsection
