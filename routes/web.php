@@ -20,4 +20,5 @@ Route::view('/', 'pages.home')->name('home');
 Route::view('tim', 'pages.tim')->name('tim');
 Route::view('blog', 'pages.blog')->name('blog');
 
+// *Admin
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
