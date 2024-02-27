@@ -9,8 +9,8 @@
     <link href="{{ url(asset('assets/css/owl.theme.default.min.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/animate.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/bootsnav.css')) }}" rel="stylesheet" />
-    <link href="{{ url(asset('assets/css/style.css')) }}" rel="stylesheet" />
-    <link href="{{ url(asset('assets/css/responsive.css')) }}" rel="stylesheet" />
+    <link href="{{ url(asset('assets/css/style-pages.css')) }}" rel="stylesheet" />
+    <link href="{{ url(asset('assets/css/responsive-pages.css')) }}" rel="stylesheet" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
@@ -35,7 +35,7 @@
     <script src="{{ url(asset('assets/js/bootstrap.min.js')) }}"></script>
     <script src="{{ url(asset('assets/js/equal-height.min.js')) }}"></script>
     <script src="{{ url(asset('assets/js/jquery.appear.js')) }}"></script>
-    <script src="{{ url(asset('assets/js/jquery.easing.min.js')) }}"></script>
+    <script src="{{ url(asset('assets/js/jquery-pages.easing.min.js')) }}"></script>
     <script src="{{ url(asset('assets/js/jquery.magnific-popup.min.js')) }}"></script>
     <script src="{{ url(asset('assets/js/modernizr.custom.13711.js')) }}"></script>
     <script src="{{ url(asset('assets/js/jquery.backgroundMove.js')) }}"></script>
