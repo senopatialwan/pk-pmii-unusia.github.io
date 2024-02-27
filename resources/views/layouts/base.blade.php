@@ -11,7 +11,8 @@
         @endif
 
         <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+		<link rel="shortcut icon" href="{{ url(asset('assets/img/pmii/logo-pmii.png')) }}">
+        @yield('head')
 
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
         @livewireStyles
