@@ -14,4 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::view('/', 'welcome')->name('home');
+
+// *Pages
 Route::view('/', 'pages.home')->name('home');
+Route::view('tim', 'pages.tim')->name('tim');
+Route::view('blog', 'pages.blog')->name('blog');
+

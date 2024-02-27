@@ -21,8 +21,12 @@
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
 
+    @include('partials.pages-header ')
+
     @yield('content')
     
+    @include('partials.pages-footer')
+
     @isset($slot)
         {{ $slot }}
     @endisset
