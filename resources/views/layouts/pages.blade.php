@@ -11,6 +11,9 @@
     <link href="{{ url(asset('assets/css/bootsnav.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/style.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/responsive.css')) }}" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
 @endsection
 
 @section('body')
