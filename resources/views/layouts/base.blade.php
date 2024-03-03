@@ -14,7 +14,7 @@
 		<link rel="shortcut icon" href="{{ url(asset('assets/img/pmii/logo-pmii.png')) }}">
         @yield('head')
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
         @livewireScripts
 

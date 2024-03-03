@@ -11,7 +11,7 @@
                     <h1>Berita & Opini</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li class="active">News</li>
                     </ul>
@@ -30,7 +30,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/1.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -38,10 +38,10 @@
                                 <div class="content">
                                     <div class="date">15 Aug, 2019</div>
                                     <h4>
-                                        <a href="single.html">Direct wicket little of talked lasted formed</a>
+                                        <a href="{{route('single-page')}}">Direct wicket little of talked lasted formed</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">
@@ -74,7 +74,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/2.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -82,10 +82,10 @@
                                 <div class="content">
                                     <div class="date">27 Nov, 2019</div>
                                     <h4>
-                                        <a href="single.html">Supported neglected met therefore unwilling</a>
+                                        <a href="{{route('single-page')}}">Supported neglected met therefore unwilling</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">
@@ -118,7 +118,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/3.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -126,10 +126,10 @@
                                 <div class="content">
                                     <div class="date">18 Sep, 2019</div>
                                     <h4>
-                                        <a href="single.html">Concerns greatest margaret absolute entrance</a>
+                                        <a href="{{route('single-page')}}">Concerns greatest margaret absolute entrance</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">
@@ -162,7 +162,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/4.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -170,10 +170,10 @@
                                 <div class="content">
                                     <div class="date">17 Oct, 2019</div>
                                     <h4>
-                                        <a href="single.html">Promotion excellent self attempted happiness</a>
+                                        <a href="{{route('single-page')}}">Promotion excellent self attempted happiness</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">
@@ -206,7 +206,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/5.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -214,10 +214,10 @@
                                 <div class="content">
                                     <div class="date">17 Oct, 2019</div>
                                     <h4>
-                                        <a href="single.html">Promotion excellent self attempted happiness</a>
+                                        <a href="{{route('single-page')}}">Promotion excellent self attempted happiness</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">
@@ -250,7 +250,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="single.html">
+                                <a href="{{route('single-page')}}">
                                     <img src="assets/img/blog/6.jpg" alt="Thumb" />
                                 </a>
                             </div>
@@ -258,10 +258,10 @@
                                 <div class="content">
                                     <div class="date">17 Oct, 2019</div>
                                     <h4>
-                                        <a href="single.html">Promotion excellent self attempted happiness</a>
+                                        <a href="{{route('single-page')}}">Promotion excellent self attempted happiness</a>
                                     </h4>
                                     <p>Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till.</p>
-                                    <a href="single.html">Read More <i class="fas fa-angle-right"></i>
+                                    <a href="{{route('single-page')}}">Read More <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                                 <div class="meta">

@@ -4106,14 +4106,15 @@ footer.default-padding-top .footer-bottom {
 
 .se-pre-con {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(assets/img/preloader.svg) center no-repeat #fff;
+  background: url('/assets/img/preloader.svg') center no-repeat #fff;
   text-align: center;
 }
+
 
 /* ============================================================== 
      # Demo 

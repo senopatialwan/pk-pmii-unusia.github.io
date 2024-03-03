@@ -4,6 +4,9 @@
 
 
 @section('content')
+
+
+
     <!-- Start Welcome 
         ============================================= -->
     <div class="banner-area content-double text-center background-move bg-gray" style="background-image: url(assets/img/bg-2.png)">
