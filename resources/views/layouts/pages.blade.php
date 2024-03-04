@@ -27,7 +27,7 @@
 
     @yield('content')
     
-    {{-- @include('partials.pages-footer') --}}
+    @include('partials.pages-footer')
 
     @isset($slot)
         {{ $slot }}
