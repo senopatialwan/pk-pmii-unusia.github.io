@@ -3935,11 +3935,6 @@ footer.default-padding-top .footer-bottom {
 /* ============================================================== 
      # User Login 
 =================================================================== */
-.login-area,
-.login-area div {
-  height: 100%;
-}
-
 .login-area div.login-items .login-box,
 .login-area div.login-items .login-box div {
   height: auto;
