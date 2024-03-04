@@ -26,6 +26,11 @@ Route::view('about', 'pages.about')->name('about');
 Route::view('database', 'pages.database')->name('database');
 Route::view('produk-hukum', 'pages.produk-hukum')->name('produk-hukum');
 
+// *Admin auth
+Route::view('masuk', 'auth.masuk')->name('masuk');
+Route::view('daftar', 'auth.daftar')->name('daftar');
+
+
 // *Admin
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
