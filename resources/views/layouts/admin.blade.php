@@ -12,7 +12,7 @@
     <!-- CORE CSS FRAMEWORK - END -->
 
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-    <link href="{{ url(asset('assets/plugins/morris-chart/css/morris.css')) }}" rel="stylesheet" type="text/css"
+    {{-- <link href="{{ url(asset('assets/plugins/morris-chart/css/morris.css')) }}" rel="stylesheet" type="text/css"
         media="screen" />
     <link href="{{ url(asset('assets/plugins/jquery-ui/smoothness/jquery-ui.min.css')) }}" rel="stylesheet" type="text/css"
         media="screen" />
@@ -31,7 +31,7 @@
     <link href="{{ url(asset('assets/plugins/jvectormap/jquery-jvectormap-2.0.1.css')) }}" rel="stylesheet" type="text/css"
         media="screen" />
     <link href="{{ url(asset('assets/plugins/icheck/skins/minimal/white.css')) }}" rel="stylesheet" type="text/css"
-        media="screen" />
+        media="screen" /> --}}
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
     <!-- CORE CSS TEMPLATE - START -->
@@ -65,7 +65,7 @@
     <!-- CORE JS FRAMEWORK - END -->
 
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-    <script src="{{ url(asset('assets/plugins/rickshaw-chart/vendor/d3.v3.js')) }}" type="text/javascript"></script>
+    {{-- <script src="{{ url(asset('assets/plugins/rickshaw-chart/vendor/d3.v3.js')) }}" type="text/javascript"></script>
     <script src="{{ url(asset('assets/plugins/jquery-ui/smoothness/jquery-ui.min.js')) }}" type="text/javascript"></script>
     <script src="{{ url(asset('assets/plugins/rickshaw-chart/js/Rickshaw.All.js')) }}"></script>
     <script src="{{ url(asset('assets/plugins/sparkline-chart/jquery.sparkline.min.js')) }}" type="text/javascript">
@@ -80,7 +80,7 @@
     </script>
     <script src="{{ url(asset('assets/plugins/gauge/gauge.min.js')) }}" type="text/javascript"></script>
     <script src="{{ url(asset('assets/plugins/icheck/icheck.min.js')) }}" type="text/javascript"></script>
-    <script src="{{ url(asset('assets/js/blo-dashboard.js')) }}" type="text/javascript"></script>
+    <script src="{{ url(asset('assets/js/blo-dashboard.js')) }}" type="text/javascript"></script> --}}
     
     <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
@@ -97,20 +97,4 @@
     <!-- Sidebar Graph - END -->
 
     <!-- General section box modal start -->
-    <div class="modal" id="section-settings" tabindex="-1" role="dialog" aria-labelledby="ultraModal-Label"
-        aria-hidden="true">
-        <div class="modal-dialog animated bounceInDown">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Section Settings</h4>
-                </div>
-                <div class="modal-body">Body goes here...</div>
-                <div class="modal-footer">
-                    <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
-                    <button class="btn btn-success" type="button">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
