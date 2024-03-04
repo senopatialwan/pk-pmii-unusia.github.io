@@ -1,5 +1,3 @@
-<!-- Start Footer 
-============================================= -->
 <footer id="footer" class="default-padding bg-light">
     <div class="container">
         <div class="row">
@@ -142,4 +140,3 @@
         <!-- End Footer Bottom -->
     </div>
 </footer>
-<!-- End Footer -->
