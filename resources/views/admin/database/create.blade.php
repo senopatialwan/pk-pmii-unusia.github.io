@@ -2,30 +2,27 @@
 @section('title', 'Admin')
 
 @section('content')
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="page-title">
+          <div class="pull-left">
+              <h1 class="title">Tambah Data Anggota </h1>
+          </div>
 
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <div class="page-title">
-        <div class="pull-left">
-            <h1 class="title">Tambah Data Anggota </h1>
-        </div>
+          <div class="pull-right hidden-xs">
+              <ol class="breadcrumb">
+                  <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i>Home</a></li>
+                  <li><a href="{{route('admin.database.index')}}">semua Data</a></li>
+                  <li class="active">
+                      <strong>Tambah Data </strong>
+                  </li>
+              </ol>
+          </div>
+      </div>
+  </div>
 
-        <div class="pull-right hidden-xs">
-            <ol class="breadcrumb">
-                <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="{{route('admin.database.index')}}">semua Data</a></li>
-                <li class="active">
-                    <strong>Tambah Data </strong>
-                </li>
-            </ol>
-        </div>
-    </div>
-</div>
+  <div class="clearfix"></div>
 
-
-
-<div class="clearfix"></div>
-
-<div class="col-md-6 content">
+  <div class="col-md-6 content">
     <h4>Formulir Pengajuan KTA</h4>
     <form action="#">
       <div class="col-lg-12 col-md-12">
@@ -131,18 +128,4 @@
       </div>
     </form>
   </div>
-  <div class="col-md-12">
-    <div class="r1_maingraph db_box">
-        <span class="pull-left">
-            <i class="icon-purple fa fa-square icon-xs"></i>&nbsp; <small>PAGE VIEWS</small>&nbsp;
-            &nbsp; <i class="fa fa-square icon-xs icon-primary"></i>&nbsp; <small>UNIQUE
-                VISITORS</small>
-        </span>
-        <div id="db_morris_area_graph" style="height: 272px; width: 100%"></div>
-    </div>
-</div>
-
-
-
-
 @endsection
