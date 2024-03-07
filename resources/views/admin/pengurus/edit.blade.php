@@ -11,7 +11,7 @@
             <div class="pull-right hidden-xs">
                 <ol class="breadcrumb">
                     <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="{{ route('admin.struktur-organisasi.index') }}">Semua Data</a></li>
+                    <li><a href="{{ route('admin.pengurus.index') }}">Semua Data</a></li>
                     <li class="active"><strong>Edit Data</strong></li>
                 </ol>
             </div>

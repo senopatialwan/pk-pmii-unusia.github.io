@@ -71,10 +71,10 @@
                 <ul class="sub-menu">
                    
                     <li>
-                        <a class="" href="{{ route('admin.struktur-organisasi.index') }}">Pengurus Komisariat</a>
+                        <a class="" href="{{ route('admin.pengurus.index') }}">Pengurus Komisariat</a>
                     </li>
                     <li>
-                        <a class="" href="{{ route('admin.struktur-organisasi.create') }}">Tambah Pengurus</a>
+                        <a class="" href="{{ route('admin.pengurus.create') }}">Tambah Pengurus</a>
                     </li>
                     
                 </ul>
