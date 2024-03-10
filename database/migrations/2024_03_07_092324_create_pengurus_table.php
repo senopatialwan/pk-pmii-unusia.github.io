@@ -15,7 +15,6 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('nama_lengkap');
             $table->string('email');
-            $table->foreign('email')->references('email')->on('users');
             $table->string('jabatan');
             $table->string('facebook');
             $table->string('instagram');
