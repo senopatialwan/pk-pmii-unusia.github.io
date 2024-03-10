@@ -65,7 +65,7 @@
                                             </li>
                                         </ul>
                                         <div class="text-center mt-3">
-                                            <a href="{{route('admin.struktur-organisasi.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
+                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
                                             <a class="btn btn-danger rounded-md">Hapus</a>
                                         </div>
                                     </div>
@@ -103,7 +103,7 @@
                                             </li>
                                         </ul>
                                         <div class="text-center mt-3">
-                                            <a href="{{route('admin.struktur-organisasi.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
+                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
                                             <a class="btn btn-danger rounded-md">Hapus</a>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@
                                             </li>
                                         </ul>
                                         <div class="text-center mt-3">
-                                            <a href="{{route('admin.struktur-organisasi.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
+                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
                                             <a class="btn btn-danger rounded-md">Hapus</a>
                                         </div>
                                     </div>
@@ -179,7 +179,7 @@
                                             </li>
                                         </ul>
                                         <div class="text-center mt-3">
-                                            <a href="{{route('admin.struktur-organisasi.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
+                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
                                             <a class="btn btn-danger rounded-md">Hapus</a>
                                         </div>
                                     </div>

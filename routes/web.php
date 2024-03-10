@@ -42,9 +42,9 @@ Route::view('admin/database/edit-anggota', 'admin.database.edit')->name('admin.d
 Route::view('admin/database/detail-anggota', 'admin.database.show')->name('admin.database.show');
 
 // *pengurus
-Route::view('admin/struktur-organisasi/data-Pengurus', 'admin.struktur-organisasi.index')->name('admin.struktur-organisasi.index');
-Route::view('admin/struktur-organisasi/tambah-Pengurus', 'admin.struktur-organisasi.create')->name('admin.struktur-organisasi.create');
-Route::view('admin/struktur-organisasi/edit-Pengurus', 'admin.struktur-organisasi.edit')->name('admin.struktur-organisasi.edit');
+Route::view('admin/pengurus/data-Pengurus', 'admin.pengurus.index')->name('admin.pengurus.index');
+Route::view('admin/pengurus/tambah-Pengurus', 'admin.pengurus.create')->name('admin.pengurus.create');
+Route::view('admin/pengurus/edit-Pengurus', 'admin.pengurus.edit')->name('admin.pengurus.edit');
 
 
 
