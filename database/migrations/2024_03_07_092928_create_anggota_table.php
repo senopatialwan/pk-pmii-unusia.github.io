@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('angkatan_mapaba');
             $table->string('nomor_telepon');
-            $table->boolean('status');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

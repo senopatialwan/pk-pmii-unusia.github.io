@@ -21,6 +21,7 @@ class Anggota extends Model
         "alamat",
         "angkatan_mapaba",
         "nomor_telepon",
+        "status"
     ];
     // if email sama dengan user
     // if email sama dengan pengurus
