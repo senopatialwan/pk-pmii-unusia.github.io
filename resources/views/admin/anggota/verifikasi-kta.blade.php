@@ -11,7 +11,7 @@
             <div class="pull-right hidden-xs">
                 <ol class="breadcrumb">
                     <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="{{ route('admin.database.index') }}">semua Data</a></li>
+                    <li><a href="{{ route('admin.anggota.index') }}">semua Data</a></li>
                     <li class="active">
                         <strong>Verivikasi kTA</strong>
                     </li>
@@ -65,7 +65,7 @@
                                             </select>
                                         </td>
                                         <td>
-                                            <a href="{{route('admin.database.show')}}" class="btn border-none rounded-sm btn-info px-4 py-2">
+                                            <a href="{{route('admin.anggota.show')}}" class="btn border-none rounded-sm btn-info px-4 py-2">
                                                 <i class="fa fa-eye"></i> Lihat Lengkap
                                             </a>
                                             <button class="btn border-none rounded-sm btn-danger px-4 py-2">
