@@ -9,7 +9,7 @@
                     <h1 class="title">Detail-anggota</h1>
                     <ol class="breadcrumb">
                         <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="{{route('admin.database.index')}}">semua Data</a></li>
+                        <li><a href="{{route('admin.anggota.index')}}">semua Data</a></li>
                         <li class="active"><strong>Data Anggota</strong></li>
                     </ol>
                 </div>
