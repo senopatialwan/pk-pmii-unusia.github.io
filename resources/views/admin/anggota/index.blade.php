@@ -56,11 +56,11 @@
                                         <td>2020</td>
                                         <td>Teknik Informatika</td>
                                         <td>
-                                            <a href="{{route('admin.database.show')}}"
+                                            <a href="{{route('admin.anggota.show')}}"
                                                 class="btn border-none rounded-sm btn-info px-4 py-2">
                                                 <i class="fa fa-eye"></i> Lihat Lengkap
                                             </a>
-                                            <a href="{{route('admin.database.edit')}}"
+                                            <a href="{{route('admin.anggota.edit')}}"
                                                 class="btn border-none rounded-sm px-4 py-2 btn-warning">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
