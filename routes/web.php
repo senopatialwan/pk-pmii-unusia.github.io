@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\Pages\PengajuanKTAController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::post('upload-files', [FileController::class,'store'])->name('upload');
+Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class,'store'])->name('pengajuan-kta.upload');
 
 // *Pages
 Route::view('/', 'pages.home')->name('home');
@@ -25,8 +28,8 @@ Route::view('tim', 'pages.tim')->name('tim');
 Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
-Route::view('Cetak', 'pages.cetak-kta')->name('cetak-kta');
-Route::view('pengajuan', 'pages.pengajuan-kta')->name('pengajuan-kta');
+Route::view('cetak-kta', 'pages.cetak-kta')->name('cetak-kta');
+Route::get('pengajuan-kta', [PengajuanKTAController::class, 'index'])->name('pengajuan-kta');
 
 // *Admin auth
 Route::view('masuk', 'auth.masuk')->name('masuk');
