@@ -14,10 +14,6 @@
 		<link rel="shortcut icon" href="{{ url(asset('assets/img/pmii/logo-pmii.png')) }}">
         @yield('head')
 
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @livewireStyles
-        @livewireScripts
-
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>

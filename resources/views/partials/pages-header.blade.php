@@ -32,11 +32,11 @@
                 <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
                     <a href="/" class="smooth-menu">Home</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'about') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('about') }}">About</a>
+                <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'database') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('database') }}">Database</a>
+                <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'produk-hukum') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>

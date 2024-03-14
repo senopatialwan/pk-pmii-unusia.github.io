@@ -15,7 +15,6 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('nama_lengkap');
             $table->string('email');
-            $table->foreign('email')->references('email')->on('users');
             $table->string('nim');
             $table->string('rayon');
             $table->string('fakultas');
@@ -23,7 +22,11 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('angkatan_mapaba');
             $table->string('nomor_telepon');
-            $table->boolean('status');
+            $table->string('sertifikat_mapaba')->nullable();
+            $table->string('foto')->nullable();
+            $table->string('cv')->nullable();
+            $table->string('ktm')->nullable();
+            $table->integer('status');
             $table->timestamps();
         });
     }

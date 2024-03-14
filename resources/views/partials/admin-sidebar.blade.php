@@ -82,18 +82,18 @@
             <li class="">
                 <a href="javascript:;">
                     <i class="fa fa-database"></i>
-                    <span class="title">Database</span>
+                    <span class="title">Anggota </span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a class="" href="{{route('admin.database.index')}}">Anggota PMII</a>
+                        <a class="" href="{{route('admin.anggota.index')}}">Anggota PMII</a>
                     </li>
                     <li>
-                        <a class="" href="{{route('admin.database.create')}}">Tambah Anggota</a>
+                        <a class="" href="{{route('admin.anggota.create')}}">Tambah Anggota</a>
                     </li>
                     <li>
-                        <a class="" href="{{route('admin.database.verivikasi-kta')}}">Verifikasi KTA PMII</a>
+                        <a class="" href="{{route('admin.anggota.verifikasi-kta')}}">Verifikasi KTA PMII</a>
                     </li>
                 </ul>
             </li>
@@ -121,7 +121,7 @@
     <div class="project-info">
         <div class="block1">
             <div class="data">
-                <span class="title">Database </span>
+                <span class="title">Anggota </span>
                 <span class="total">1000</span>
             </div>
             <div class="graph">
