@@ -70,20 +70,20 @@ class PengajuanKTARequest extends FormRequest
             'nomor_telepon.integer' => 'Nomor telepon harus berupa angka.',
     
             'sertifikat_mapaba.required' => 'Sertifikat Mapaba harus diunggah.',
-            'sertifikat_mapaba.mimes' => 'Sertifikat Mapaba harus berformat PDF.',
+            'sertifikat_mapaba.mimes' => 'Sertifikat Mapaba harus PDF.',
     
             'foto.required' => 'Foto harus diunggah.',
             'foto.image' => 'Foto harus berupa file gambar.',
-            'foto.mimes' => 'Foto harus berformat JPEG, PNG, atau JPG.',
+            'foto.mimes' => 'Foto harus JPEG, PNG, atau JPG.',
             'foto.max' => 'Ukuran foto tidak boleh lebih dari 2 MB.',
     
             'cv.required' => 'CV harus diunggah.',
-            'cv.mimes' => 'CV harus berformat PDF, DOC, atau DOCX.',
+            'cv.mimes' => 'CV harus PDF, DOC, atau DOCX.',
             'cv.max' => 'Ukuran CV tidak boleh lebih dari 2 MB.',
     
             'ktm.required' => 'KTM harus diunggah.',
             'ktm.image' => 'KTM harus berupa file gambar.',
-            'ktm.mimes' => 'KTM harus berformat JPEG, PNG, atau JPG.',
+            'ktm.mimes' => 'KTM harus JPEG, PNG, atau JPG.',
             'ktm.max' => 'Ukuran KTM tidak boleh lebih dari 2 MB.',
         ];
     }
