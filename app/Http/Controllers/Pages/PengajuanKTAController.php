@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Pages\PengajuanKTARequest;
-use Illuminate\Http\Request;
 use App\Traits\Upload;
 use App\Models\Anggota;
 

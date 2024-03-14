@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('foto')->nullable();
             $table->string('cv')->nullable();
             $table->string('ktm')->nullable();
-            $table->boolean('status')->default(false);
+            $table->integer('status');
             $table->timestamps();
         });
     }
