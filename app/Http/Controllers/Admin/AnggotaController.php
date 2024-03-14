@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Anggota;
+use Illuminate\Http\Request;
 
 class AnggotaController extends Controller
 {
@@ -38,16 +40,32 @@ class AnggotaController extends Controller
 
     public function destroy($id)
     {
-        //
+        $anggota = Anggota::findOrFail($id);
+        $anggota->delete();
+        return redirect()->back();
     }
 
     public function verifikasiKTA()
     {
-        return view('admin.anggota.verifikasi-kta');
+        $anggota_verifikasi = Anggota::get();
+        $data = [
+            'anggota_verifikasi' => $anggota_verifikasi
+        ];
+        return view('admin.anggota.verifikasi-kta', $data);
     }
 
-    public function handleVerifikasiKTA($request)
+    public function handleVerifikasiKTA(Request $request)
     {
-        //
+        $anggota = Anggota::find($request->id);
+        if($request->status)
+        {
+            $anggota->update([
+                'status'=> $request->status
+            ]);
+        } else
+        {
+            $this->destroy($request->id);
+        }
+        return redirect()->back();
     }
 }

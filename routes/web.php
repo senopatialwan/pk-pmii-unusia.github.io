@@ -21,6 +21,8 @@ use App\Http\Controllers\Pages\PengajuanKTAController;
 Route::post('upload-files', [FileController::class,'store'])->name('upload');
 Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class,'store'])->name('pengajuan-kta.upload');
 
+Route::post('v1/admin/verifikasi-kta', [AnggotaController::class,'handleVerifikasiKTA'])->name('admin.anggota.verifikasi-kta.handle');
+
 // *Pages
 Route::view('/', 'pages.home')->name('home');
 Route::view('produk-hukum', 'pages.produk-hukum')->name('produk-hukum');
@@ -40,7 +42,6 @@ Route::view('daftar', 'auth.daftar')->name('daftar');
 // *Admin
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
-// *anggota
 // *anggota
 Route::get('admin/anggota', [AnggotaController::class, 'index'])->name('admin.anggota.index');
 Route::get('admin/anggota/detail-anggota', [AnggotaController::class, 'show'])->name('admin.anggota.show');
