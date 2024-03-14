@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\Admin\AnggotaController;
 use App\Http\Controllers\Pages\PengajuanKTAController;
 /*
 |--------------------------------------------------------------------------
@@ -40,11 +41,12 @@ Route::view('daftar', 'auth.daftar')->name('daftar');
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
 // *anggota
-Route::view('admin/anggota', 'admin.anggota.index')->name('admin.anggota.index');
-Route::view('admin/anggota/verifikasi-kta', 'admin.anggota.verifikasi-kta')->name('admin.anggota.verifikasi-kta');
-Route::view('admin/anggota/tambah-anggota', 'admin.anggota.create')->name('admin.anggota.create');
-Route::view('admin/anggota/edit-anggota', 'admin.anggota.edit')->name('admin.anggota.edit');
-Route::view('admin/anggota/detail-anggota', 'admin.anggota.show')->name('admin.anggota.show');
+// *anggota
+Route::get('admin/anggota', [AnggotaController::class, 'index'])->name('admin.anggota.index');
+Route::get('admin/anggota/detail-anggota', [AnggotaController::class, 'show'])->name('admin.anggota.show');
+Route::get('admin/anggota/tambah-anggota', [AnggotaController::class, 'create'])->name('admin.anggota.create');
+Route::get('admin/anggota/edit-anggota', [AnggotaController::class, 'edit'])->name('admin.anggota.edit');
+Route::get('admin/anggota/verifikasi-kta', [AnggotaController::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
 
 // *pengurus
 Route::view('admin/pengurus', 'admin.pengurus.index')->name('admin.pengurus.index');
