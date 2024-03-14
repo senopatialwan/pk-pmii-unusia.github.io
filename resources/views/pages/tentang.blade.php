@@ -2,14 +2,6 @@
 @section('title', 'About | PMII UNUSIA BOGOR')
 
 @section('content')
-<form action="{{ route('upload') }}" method="post" enctype="multipart/form-data">
-        @csrf
-        <label for="image">Pilih Gambar:</label>
-        <input type="file" name="file" id="image" accept="image/*">
-        <br><br>
-        <button type="submit">Upload</button>
-    </form>
-<div id="about" class="features-area reverse shadow-less default-padding">
     <div class="container">
         <div class="row">
             <!-- Thumb -->
