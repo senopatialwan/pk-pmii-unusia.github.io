@@ -24,7 +24,7 @@ class PengajuanKTARequest extends FormRequest
         return [
             'nama_lengkap' => 'required|string',
             'email' => 'required|email',
-            'nim' => 'required|integer',
+            'nim' => 'required|integer|unique:anggota,nim',
             'rayon' => 'required|string',
             'fakultas' => 'required|string',
             'prodi' => 'required|string',
@@ -49,6 +49,7 @@ class PengajuanKTARequest extends FormRequest
     
             'nim.required' => 'NIM harus diisi.',
             'nim.integer' => 'NIM harus berupa angka.',
+            'nim.unique' => 'NIM harus unik, NIM ini sudah terdaftar.',
     
             'rayon.required' => 'Rayon harus diisi.',
             'rayon.string' => 'Rayon harus berupa teks.',
