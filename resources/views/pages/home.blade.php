@@ -49,7 +49,7 @@
                     <div class="col-md-6 right-info">
                         <div class="thumb">
                             <img src="assets/img/pmii/laptop-pmii.png" alt="Thumb" />
-                            <a class="popup-youtube video-play-button" href="https://youtu.be/AQXKIGKvlgQ?si=qxuLbkq6IrB9cLwy">
+                            <a class="popup-youtube video-play-button" href="https://www.youtube.com/watch?v=AQXKIGKvlgQ">
                                 <i class="fa fa-play"></i>
                             </a>
                         </div>
