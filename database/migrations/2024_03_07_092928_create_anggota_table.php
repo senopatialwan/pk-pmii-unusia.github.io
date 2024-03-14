@@ -22,7 +22,11 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('angkatan_mapaba');
             $table->string('nomor_telepon');
-            $table->boolean('status');
+            $table->string('sertifikat_mapaba')->nullable();
+            $table->string('foto')->nullable();
+            $table->string('cv')->nullable();
+            $table->string('ktm')->nullable();
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }
