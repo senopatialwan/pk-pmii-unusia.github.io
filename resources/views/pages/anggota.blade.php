@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 info">
-                <h2> DATABASE RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
+                <h2> ANGGOTA RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
                 <p> Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. </p>
                 <div class="fun-facts">
                     <h3>Database Keluarga Besar Kami</h3>
