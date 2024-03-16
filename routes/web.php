@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\Admin\AnggotaController;
 use App\Http\Controllers\Pages\PengajuanKTAController;
+use App\Http\Controllers\Admin\PengurusController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,7 +39,6 @@ Route::get('pengajuan-kta', [PengajuanKTAController::class, 'index'])->name('pen
 Route::view('masuk', 'auth.masuk')->name('masuk');
 Route::view('daftar', 'auth.daftar')->name('daftar');
 
-
 // *Admin
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
@@ -49,7 +49,12 @@ Route::get('admin/anggota/tambah-anggota', [AnggotaController::class, 'create'])
 Route::get('admin/anggota/edit-anggota', [AnggotaController::class, 'edit'])->name('admin.anggota.edit');
 Route::get('admin/anggota/verifikasi-kta', [AnggotaController::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
 
-// *pengurus
-Route::view('admin/pengurus', 'admin.pengurus.index')->name('admin.pengurus.index');
-Route::view('admin/pengurus/tambah-pengurus', 'admin.pengurus.create')->name('admin.pengurus.create');
-Route::view('admin/pengurus/edit-pengurus', 'admin.pengurus.edit')->name('admin.pengurus.edit');
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
+    Route::get('/pengurus/create', [PengurusController::class, 'create'])->name('admin.pengurus.create');
+    Route::post('/pengurus', [PengurusController::class, 'store'])->name('admin.pengurus.store');
+    Route::get('/pengurus/{pengurus}/edit', [PengurusController::class, 'edit'])->name('admin.pengurus.edit');
+    Route::put('/pengurus/{pengurus}', [PengurusController::class, 'update'])->name('admin.pengurus.update');
+    Route::delete('/pengurus/{pengurus}', [PengurusController::class, 'destroy'])->name('admin.pengurus.destroy');
+});

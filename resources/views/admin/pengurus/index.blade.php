@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Admin')
+@section('title', 'Data Pengurus Komisariat')
 @section('content')
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="page-title">
@@ -19,7 +19,7 @@
     </div>
 
     <div class="clearfix"></div>
-    
+
     <div class="col-lg-12">
         <section class="box">
             <header class="panel_header">
@@ -31,162 +31,53 @@
             </header>
             <div class="content-body">
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
-                                <div class="card">
-                                    <img class="card-img-top" src="{{ asset('assets/images/pmii/alwan-2.jpeg') }}"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alwan abdurahman</h5>
-                                        <p class="card-text">Ketua Pelaksana</p>
-                                        <p class="card-text"><i class="fa fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                        </p>
-                                        <ul class="social-icons list-inline w-auto">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i style="color: #3b5998;" class="fa fa-facebook "></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-twitter text-info fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-instagram text-danger fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-linkedin text-primary fa-lg"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-3">
-                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
-                                            <a class="btn btn-danger rounded-md">Hapus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
-                                <div class="card">
-                                    <img class="card-img-top" src="{{ asset('assets/images/pmii/alwan-2.jpeg') }}"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alwan abdurahman</h5>
-                                        <p class="card-text">Ketua Pelaksana</p>
-                                        <p class="card-text"><i class="fa fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                        </p>
-                                        <ul class="social-icons list-inline w-auto">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i style="color: #3b5998;" class="fa fa-facebook "></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-twitter text-info fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-instagram text-danger fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-linkedin text-primary fa-lg"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-3">
-                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
-                                            <a class="btn btn-danger rounded-md">Hapus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
-                                <div class="card">
-                                    <img class="card-img-top" src="{{ asset('assets/images/pmii/alwan-2.jpeg') }}"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alwan abdurahman</h5>
-                                        <p class="card-text">Ketua Pelaksana</p>
-                                        <p class="card-text"><i class="fa fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                        </p>
-                                        <ul class="social-icons list-inline w-auto">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i style="color: #3b5998;" class="fa fa-facebook "></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-twitter text-info fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-instagram text-danger fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-linkedin text-primary fa-lg"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-3">
-                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
-                                            <a class="btn btn-danger rounded-md">Hapus</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
-                                <div class="card">
-                                    <img class="card-img-top" src="{{ asset('assets/images/pmii/alwan-2.jpeg') }}"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Alwan abdurahman</h5>
-                                        <p class="card-text">Ketua Pelaksana</p>
-                                        <p class="card-text"><i class="fa fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                        </p>
-                                        <ul class="social-icons list-inline w-auto">
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i style="color: #3b5998;" class="fa fa-facebook "></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-twitter text-info fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-instagram text-danger fa-lg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <i class="fa fa-linkedin text-primary fa-lg"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="text-center mt-3">
-                                            <a href="{{route('admin.pengurus.edit')}}" class="btn btn-primary mr-2 rounded-md">Edit</a>
-                                            <a class="btn btn-danger rounded-md">Hapus</a>
+                    @foreach ($penguruses as $pengurus)
+                        <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
+                            <div class="card">
+                                <img class="card-img-top" src="{{ $pengurus->image_url }}"
+                                    alt="{{ $pengurus->nama_lengkap }}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $pengurus->nama_lengkap }}</h5>
+                                    <p class="card-text">{{ $pengurus->jabatan }}</p>
+                                    <p class="card-text"><i class="fa fa-envelope"></i> {{ $pengurus->email }}</p>
+                                    <ul class="social-icons list-inline w-auto">
+                                        <li class="list-inline-item">
+                                            <a href="{{ $pengurus->facebook }}">
+                                                <i style="color: #3b5998;" class="fa fa-facebook "></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="{{ $pengurus->twitter }}">
+                                                <i class="fa fa-twitter text-info fa-lg"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="{{ $pengurus->instagram }}">
+                                                <i class="fa fa-instagram text-danger fa-lg"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="{{ $pengurus->linkedin }}">
+                                                <i class="fa fa-linkedin text-primary fa-lg"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center mt-3">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <a href="{{ route('admin.pengurus.edit', $pengurus->id) }}"
+                                                class="btn btn-primary rounded-md d-inline-block">Edit</a>
+                                            <form action="{{ route('admin.pengurus.destroy', $pengurus->id) }}"
+                                                method="POST" class="d-inline-block">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger rounded-md">Hapus</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
