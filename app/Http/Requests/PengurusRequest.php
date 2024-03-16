@@ -13,7 +13,7 @@ class PengurusRequest extends FormRequest
      */
     public function authorize()
     {
-        return true; // Atur sesuai kebutuhan autentikasi Anda
+        return true;
     }
 
     /**
@@ -27,7 +27,7 @@ class PengurusRequest extends FormRequest
             return [
                 'nama_lengkap' => 'required|string|max:255',
                 'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-                'email' => 'required|email|unique:pengurus,email',
+                'email' => 'required|unique:pengurus,email',
                 'jabatan' => 'required|string|max:255',
                 'facebook' => 'nullable|url',
                 'instagram' => 'nullable|url',
@@ -38,7 +38,7 @@ class PengurusRequest extends FormRequest
             return [
                 'nama_lengkap' => 'required|string|max:255',
                 'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-                'email' => 'required|email|unique:pengurus,email,' . $this->pengurus->id,
+                'email' => 'required|unique:pengurus,email',
                 'jabatan' => 'required|string|max:255',
                 'facebook' => 'nullable|url',
                 'instagram' => 'nullable|url',
@@ -64,7 +64,6 @@ class PengurusRequest extends FormRequest
             'image.mimes' => 'Format gambar yang diizinkan adalah: jpeg, png, jpg, gif.',
             'image.max' => 'Ukuran gambar tidak boleh lebih dari 2MB.',
             'email.required' => 'Email harus diisi.',
-            'email.email' => 'Email harus berupa alamat email yang valid.',
             'email.unique' => 'Email sudah digunakan.',
             'jabatan.required' => 'Jabatan harus diisi.',
             'facebook.url' => 'Link Facebook harus berupa URL yang valid.',

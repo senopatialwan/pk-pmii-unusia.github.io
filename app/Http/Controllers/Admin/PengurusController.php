@@ -8,33 +8,17 @@ use App\Http\Requests\PengurusRequest;
 
 class PengurusController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        $penguruses = Pengurus::all();
-        return view('admin.pengurus.index', compact('penguruses'));
+        $pengurus = Pengurus::all();
+        return view('admin.pengurus.index', compact('pengurus'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('admin.pengurus.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\PengurusRequest  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(PengurusRequest $request)
     {
         $image = $request->file('image');
@@ -54,24 +38,11 @@ class PengurusController extends Controller
         return redirect()->route('admin.pengurus.index')->with('success', 'Pengurus berhasil ditambahkan.');
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Pengurus  $pengurus
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Pengurus $pengurus)
     {
         return view('admin.pengurus.edit', compact('pengurus'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\PengurusRequest  $request
-     * @param  \App\Models\Pengurus  $pengurus
-     * @return \Illuminate\Http\Response
-     */
     public function update(PengurusRequest $request, Pengurus $pengurus)
     {
         // Tambahkan pernyataan debugging untuk memeriksa data yang dikirimkan dari formulir
@@ -81,7 +52,7 @@ class PengurusController extends Controller
             $imagePath = $image->storeAs('public/pengurus', $image->hashName());
             $pengurus->image = $imagePath;
         }
-    
+
         $pengurus->nama_lengkap = $request->nama_lengkap;
         $pengurus->email = $request->email;
         $pengurus->jabatan = $request->jabatan;
@@ -90,17 +61,10 @@ class PengurusController extends Controller
         $pengurus->twitter = $request->twitter;
         $pengurus->linkedin = $request->linkedin;
         $pengurus->save();
-    
+
         return redirect()->route('admin.pengurus.index')->with('success', 'Pengurus berhasil diperbarui.');
     }
-    
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Pengurus  $pengurus
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Pengurus $pengurus)
     {
         $pengurus->delete();
