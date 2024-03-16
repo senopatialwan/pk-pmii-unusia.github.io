@@ -31,7 +31,7 @@
             </header>
             <div class="content-body">
                 <div class="row">
-                    @foreach ($penguruses as $pengurus)
+                    @foreach ($pengurus as $pengurus)
                         <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
                             <div class="card">
                                 <img class="card-img-top" src="{{ $pengurus->image_url }}"

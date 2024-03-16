@@ -13,14 +13,11 @@ class Pengurus extends Model
 
     protected $table = 'pengurus';
     protected $primaryKey = 'id';
-    public $incrementing = false;
-    protected $keyType = 'string';
-
     protected $fillable = [
         'nama_lengkap',
-        'image',
         'email',
         'jabatan',
+        'image',
         'facebook',
         'instagram',
         'twitter',
