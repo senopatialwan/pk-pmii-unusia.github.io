@@ -11,9 +11,9 @@
                     <h1>Berita & Opini</h1>
                     <ul class="breadcrumb">
                         <li>
-                            <a href="/">Home</a>
+                            <a href="/">Beranda</a>
                         </li>
-                        <li class="active">News</li>
+                        <li class="active">Berita</li>
                     </ul>
                 </div>
             </div>

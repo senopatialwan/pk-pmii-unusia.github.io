@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                 <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
-                    <a href="/" class="smooth-menu">Home</a>
+                    <a href="/" class="smooth-menu">Beranda</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
@@ -42,14 +42,10 @@
                     <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'tim') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('tim') }}">Team</a>
+                    <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                 </li>
                 <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
-                    <a class="dropdown-toggle smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" data-toggle="dropdown" href="{{ route('blog') }}">News</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('blog') }}" class="<?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">Berita</a></li>
-                        <li><a href="{{ route('blog') }}" class="<?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">Opini</a></li>
-                    </ul>
+                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('blog') }}">Berita</a>
                 </li>
             </ul>
         </div>

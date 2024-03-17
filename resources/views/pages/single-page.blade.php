@@ -15,9 +15,9 @@
           <div class="col-lg-12 col-md-12">
             <h1>Berita & Opini</h1>
             <ul class="breadcrumb">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">News</a></li>
-              <li class="active">Page</li>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Berita</a></li>
+              <li class="active">Halaman</li>
             </ul>
           </div>
         </div>
