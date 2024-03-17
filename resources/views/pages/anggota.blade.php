@@ -7,10 +7,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 info">
-                <h2> ANGGOTA RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
-                <p> Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. </p>
+                <h2> ANGGOTA KOMISARIAT & RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
+                <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki 1 Kepengurusan Komisariat beserta KOPRI Komisariat & Memiliki 5 Rayon Aktif beserta KOPRI Rayon dengan Total Anggota Sebanyak .... </p>
                 <div class="fun-facts">
-                    <h3>Database Keluarga Besar Kami</h3>
+                    <h3>KELUARGA BESAR KAMI</h3>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="clients-items owl-carousel owl-theme text-center">

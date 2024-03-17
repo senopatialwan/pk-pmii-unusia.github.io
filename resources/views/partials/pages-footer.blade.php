@@ -5,7 +5,7 @@
                 <div class="col-md-4 col-sm-6 equal-height item">
                     <div class="f-item">
                         <img src="assets/img/pmii/logo-web.png" alt="Logo" style="width: 20em" />
-                        <p>Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address.</p>
+                        <p>Website Resmi Pengurus Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor.</p>
                         <p>
                             <i>Daftar email Anda untuk mendapatkan informasi tambahan melalui email tersebut.</i>
                         </p>
@@ -26,22 +26,22 @@
                         <h4>Link Terkait</h4>
                         <ul>
                             <li>
-                                <a class="smooth-menu" href="#home">Home</a>
+                                <a class="smooth-menu" href="#home">Beranda</a>
                             </li>
                             <li>
-                                <a class="smooth-menu" href="#about">About</a>
+                                <a class="smooth-menu" href="#about">Tentang</a>
                             </li>
                             <li>
-                                <a class="smooth-menu" href="#database">Database</a>
+                                <a class="smooth-menu" href="#database">Anggota</a>
                             </li>
                             <li>
                                 <a class="smooth-menu" href="#produkHukum">Produk Hukum </a>
                             </li>
                             <li>
-                                <a class="smooth-menu" href="#team">Team</a>
+                                <a class="smooth-menu" href="#team">Pengurus Komisariat</a>
                             </li>
                             <li>
-                                <a class="smooth-menu" href="#news">News</a>
+                                <a class="smooth-menu" href="#news">Berita</a>
                             </li>
                         </ul>
                     </div>

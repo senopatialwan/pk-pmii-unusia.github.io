@@ -21,8 +21,8 @@
                                     <h1>
                                         <span>AKADEMISI</span>
                                     </h1>
-                                    <p>Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant.</p>
-                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Bergerak!</a>
+                                    <p>Intelektual, Aktif, Kritis: Membangun Kebijakan dan Pemimpin Masa Depan Bersama Pergerakan Mahasiswa Islam Indonesia.</p>
+                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Pergerakan!</a>
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
@@ -30,8 +30,8 @@
                                     <h1>
                                         <span>BERKARAKTER</span>
                                     </h1>
-                                    <p>Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant.</p>
-                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Bergerak!</a>
+                                    <p>Membangun Mahasiswa Berkualitas, Berintegritas, dan Berkontribusi untuk Masa Depan Bangsa Bersama Pergerakan Mahasiswa Islam Indonesia.</p>
+                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Pergerakan!</a>
                                 </div>
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
@@ -39,8 +39,8 @@
                                     <h1>
                                         <span>MILITANSI</span>
                                     </h1>
-                                    <p>Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant.</p>
-                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Bergerak!</a>
+                                    <p>Mengokohkan Komitmen, Membela Keadilan, dan Mewujudkan Perubahan Bersama Pergerakan Mahasiswa Islam Indonesia.</p>
+                                    <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Pergerakan!</a>
                                 </div>
                                 <!-- End Single Item -->
                             </div>
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="info">
                                         <h4>TUJUAN PMII</h4>
-                                        <p>Situation perpetual allowance offending as principle.</p>
+                                        <p>Keadilan, Kemajuan, Kemanusiaan: Landasan Perjuangan PMII Menuju Masa Depan yang Berkeadilan.</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="info">
                                         <h4>SEJARAH PMII</h4>
-                                        <p>Situation perpetual allowance offending as principle.</p>
+                                        <p>Warisan Perjuangan, Inspirasi Masa Depan, Mengabdi pada Kebenaran, Keadilan, dan Kemanusiaan.</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                     </div>
                                     <div class="info">
                                         <h4>FILOSOFI LOGO PMII</h4>
-                                        <p>Situation perpetual allowance offending as principle.</p>
+                                        <p>Simbol Perjuangan, Ketahanan, Kesetiaan, Keilmuan dan Kemuliaan Menyatu dalam Logo PMII.</p>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +118,8 @@
                                         <i class="flaticon-file"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>TENTANG PMII UNUSIA</h4>
-                                        <p>Situation perpetual allowance offending as principle.</p>
+                                        <h4>TENTANG PMII UNUSIA BOGOR</h4>
+                                        <p>Sejarah dan Semua tentang Pergerakan Kami.</p>
                                     </div>
                                 </div>
                             </div>
@@ -137,10 +137,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 info">
-                    <h2> DATABASE RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
-                    <p> Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. </p>
+                    <h2> ANGGOTA KOMISARIAT & RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
+                    <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki 1 Kepengurusan Komisariat beserta KOPRI Komisariat & Memiliki 5 Rayon Aktif beserta KOPRI Rayon dengan Total Anggota Sebanyak .... </p>
                     <div class="fun-facts">
-                        <h3>Database Keluarga Besar Kami</h3>
+                        <h3>KELUARGA BESAR KAMI</h3>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="clients-items owl-carousel owl-theme text-center">
@@ -191,7 +191,7 @@
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
                         <h2>PRODUK HUKUM PMII</h2>
-                        <p>Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.</p>
+                        <p>PMII mempunyai <strong> Nilai Dasar Pergerakan (NDP) </strong>yakni suatu sublimasi nilai ke-Islaman dan ke- Indonesian dengan kerangka pemahaman keagamaan ahlusunnah wal jamaah yang menjiwai berbagai aturan, memberi arahan dan mendorong serta penggerak kegiatan-kegiatan PMII.</p>
                     </div>
                 </div>
             </div>
@@ -206,7 +206,6 @@
                             </div>
                             <div class="info">
                                 <h4>AD-ART PMII</h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
                                 <div class="bottom">
                                     <a href="https://drive.google.com/file/d/1o7fw_QV1JOTZZ0xY0fuUe3uj-lH_cbky/view?usp=drive_link">View Details <i class="fas fa-angle-right"></i>
                                     </a>
@@ -224,7 +223,6 @@
                             </div>
                             <div class="info">
                                 <h4>Hasil Muspimnas</h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
                                 <div class="bottom">
                                     <a href="https://drive.google.com/file/d/1xUD3X9veew-Tc9Nv-6O7X_SzObrUp5Y2/view?usp=drive_link">View Details <i class="fas fa-angle-right"></i>
                                     </a>
@@ -242,7 +240,6 @@
                             </div>
                             <div class="info">
                                 <h4>Peraturan Organisasi</h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
                                 <div class="bottom">
                                     <a href="#">View Details <i class="fas fa-angle-right"></i>
                                     </a>
@@ -260,9 +257,8 @@
                             </div>
                             <div class="info">
                                 <h4>MARS PMII</h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
                                 <div class="bottom">
-                                    <a href="https://youtu.be/f35lLeCHP8M?si=a_1czN7MKkl_4Gi6" class="popup-youtube">View Details <i class="fas fa-angle-right"></i>
+                                    <a href="https://www.youtube.com/watch?v=f35lLeCHP8M" class="popup-youtube">View Details <i class="fas fa-angle-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -277,8 +273,7 @@
                                 <i class="flaticon-file"></i>
                             </div>
                             <div class="info">
-                                <h4>Hasil Rapat Tahunan Komisariat</h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
+                                <h4>Hasil RTK Komisariat UNUSIA</h4>
                                 <div class="bottom">
                                     <a href="#">View Details <i class="fas fa-angle-right"></i>
                                     </a>
@@ -296,7 +291,6 @@
                             </div>
                             <div class="info">
                                 <h4>Kalender Kegiatan Komisariat </h4>
-                                <p>Situation perpetual allowance offending as principle.</p>
                                 <div class="bottom">
                                     <a href="#">View Details <i class="fas fa-angle-right"></i>
                                     </a>
@@ -323,7 +317,7 @@
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
                         <h2>SEPUTAR INFORMASI KEGIATAN</h2>
-                        <p>Learning day desirous informed expenses material returned six the. She enabled invited exposed him another. Reasonably conviction solicitude me mr at discretion reasonable. Age out full gate bed day lose.</p>
+                        <p>Seputar informasi kegiatan PMII mencakup segala informasi yang berkaitan dengan kegiatan, acara, program, dan inisiatif yang dijalankan oleh Pergerakan Mahasiswa Islam Indonesia (PMII) UNUSIA Kabupaten Bogor. <br/> "Terang dalam Aksi, Berbagi Informasi & Wujudkan Langkah Nyata Bersama PMII."</p>
                     </div>
                 </div>
             </div>
@@ -332,17 +326,17 @@
                     <div class="overview-carousel owl-carousel owl-theme">
                         <div class="item">
                             <a class="item popup-link" href="assets/img/1500x700.png">
-                                <img src="assets/img/app/dashboard-1.jpg" alt="Thumb" />
+                                <img src="assets/img/informasiKegiatan/kasmirat.jpeg" alt="Thumb" />
                             </a>
                         </div>
                         <div class="item">
                             <a class="item popup-link" href="assets/img/1500x700.png">
-                                <img src="assets/img/app/dashboard-2.jpg" alt="Thumb" />
+                                <img src="assets/img/informasiKegiatan/cucurak.jpeg" alt="Thumb" />
                             </a>
                         </div>
                         <div class="item">
                             <a class="item popup-link" href="assets/img/1500x700.png">
-                                <img src="assets/img/app/dashboard-3.jpg" alt="Thumb" />
+                                <img src="assets/img/informasiKegiatan/ramadhan.jpeg" alt="Thumb" />
                             </a>
                         </div>
                     </div>
