@@ -129,7 +129,7 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Zulzam RA</h4>
+                                <h4>Ahmad Zulzam RA</h4>
                                 <span>BENDAHARA UMUM</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> kiplimaung@gmail.com
@@ -218,7 +218,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/alwan.jpeg" alt="Thumb" />
+                                <img src="assets/img/tim/slamet.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -243,8 +243,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Selamet Riyadi</h4>
-                                <span>Wakil Ketua 2</span>
+                                <h4>Slamet Nasrul Anwar</h4>
+                                <span>Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> kiplimaung@gmail.com
                                 </h5>
@@ -256,7 +256,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/kipli.jpeg" alt="Thumb" />
+                                <img src="assets/img/tim/alwan.jpeg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -284,7 +284,7 @@
                                 <h4>M Alwan Abdurrahman</h4>
                                 <span>Sekretaris Wakil Ketua 1</span>
                                 <h5>
-                                    <i class="fas fa-envelope"></i> kiplimaung@gmail.com
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
                             </div>
                         </div>
@@ -471,7 +471,7 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Selamet Riyadi</h4>
+                                <h4>Ali Sodiqin</h4>
                                 <span>Biro Keagamaan</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> kiplimaung@gmail.com
