@@ -13,7 +13,7 @@
                   <a href="/">
                     <img src="assets/img/pmii/logo-web.png" style="width: 15em" alt="Login" />
                   </a>
-                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota PMII UNUSIA Cabang Kabupaten Bogor. <strong>
+                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota Khusus PMII UNUSIA Cabang Kabupaten Bogor. <strong>
                       <br />
                       <i>Informasimu akan disimpan dengan Aman </i>
                     </strong>
