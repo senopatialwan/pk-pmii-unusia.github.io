@@ -218,7 +218,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/zulzam.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/alwan.jpeg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
