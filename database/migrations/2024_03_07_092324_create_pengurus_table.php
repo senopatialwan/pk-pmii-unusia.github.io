@@ -16,10 +16,11 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('email');
             $table->string('jabatan');
-            $table->string('facebook');
-            $table->string('instagram');
-            $table->string('twitter');
-            $table->string('linkedin');
+            $table->string('image');
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('linkedin')->nullable();
             $table->timestamps();
         });
     }
