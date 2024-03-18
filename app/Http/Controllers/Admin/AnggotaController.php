@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Anggota;
+use App\Models\ProgramStudi;
 use Illuminate\Http\Request;
+use App\Models\Fakultas;
 
 class AnggotaController extends Controller
 {
@@ -12,7 +14,7 @@ class AnggotaController extends Controller
     {
         return view('admin.anggota.index');
     }
-    
+
     public function show()
     {
         return view('admin.anggota.show');

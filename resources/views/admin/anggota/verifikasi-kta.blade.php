@@ -48,8 +48,8 @@
                                             <td>{{ $anggota->nim }}</td>
                                             <td>{{ $anggota->nama_lengkap }}</td>
                                             <td>{{ $anggota->rayon }}</td>
-                                            <td>{{ $anggota->fakultas }}</td>
-                                            <td>{{ $anggota->prodi }}</td>
+                                            <td>{{ $anggota->fakultas->nama }}</td>
+                                            <td>{{ $anggota->prodi->nama }}</td>
                                             <td>{{ $anggota->angkatan_mapaba }}</td>
                                             <td><span>{{ $anggota->status == 1 ? 'Diterima': ($anggota->status == 0 ? 'Belum ditentukan' : 'Ditolak') }}</span></td>
                                             <td>

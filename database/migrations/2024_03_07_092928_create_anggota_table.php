@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('nim');
             $table->string('rayon');
-            $table->string('fakultas');
-            $table->string('prodi');
+            $table->unsignedBigInteger('fakultas_id');
+            $table->unsignedBigInteger('prodi_id');
             $table->string('alamat');
             $table->string('angkatan_mapaba');
             $table->string('nomor_telepon');
