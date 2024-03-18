@@ -29,22 +29,22 @@
             <li class="">
                 <a href="javascript:;">
                     <i class="fa fa-edit"></i>
-                    <span class="title">News</span>
+                    <span class="title">Berita</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a class="" href="blo-blogs.html">All News</a>
+                        <a class="" href="{{ route('admin.blogs.index') }}">Semua berita</a>
                     </li>
                     <li>
-                        <a class="" href="blo-blog-add.html">Add News</a>
+                        <a class="" href="{{ route('admin.blogs.create') }}">Tambah berita</a>
                     </li>
                     <li>
-                        <a class="" href="blo-blog-edit.html">Edit News</a>
-                    </li>
+                        <a class="" href="{{ route('admin.categories.index') }}">Category blog</a>
+                    </li>                    
                     <li>
-                        <a class="" href="blo-blog-view.html">View News</a>
-                    </li>
+                        <a class="" href="{{ route('admin.tags.index') }}">Tags</a>
+                    </li>                    
                 </ul>
             </li>
             <li class="">

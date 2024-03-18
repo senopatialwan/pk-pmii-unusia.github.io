@@ -21,7 +21,7 @@
           </button>
           <a class="navbar-brand" href="index.html">
             <!-- Pastikan path gambar benar -->
-            <img src="assets/img/pmii/logo-web.png" class="logo logo-scrolled" alt="Logo" style="max-width: 10em" />
+            <img src="{{asset('assets/images/pmii/logo-web.png')}}" class="logo logo-scrolled" alt="Logo" style="max-width: 10em" />
           </a>
         </div>
         <!-- End Header Navigation -->
@@ -45,7 +45,7 @@
                     <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                 </li>
                 <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
-                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('blog') }}">Berita</a>
+                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
                 </li>
             </ul>
         </div>
