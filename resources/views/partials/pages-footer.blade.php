@@ -25,23 +25,23 @@
                     <div class="f-item link">
                         <h4>Link Terkait</h4>
                         <ul>
-                            <li>
-                                <a class="smooth-menu" href="#home">Beranda</a>
+                            <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="/">Beranda</a>
                             </li>
-                            <li>
-                                <a class="smooth-menu" href="#about">Tentang</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
                             </li>
-                            <li>
-                                <a class="smooth-menu" href="#database">Anggota</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
                             </li>
-                            <li>
-                                <a class="smooth-menu" href="#produkHukum">Produk Hukum </a>
+                            <li class="<?php echo (Route::currentRouteName() == 'produk-hukum') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>
                             </li>
-                            <li>
-                                <a class="smooth-menu" href="#team">Pengurus Komisariat</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'tim') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                             </li>
-                            <li>
-                                <a class="smooth-menu" href="#news">Berita</a>
+                            <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
+                                <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('blog') }}">Berita</a>
                             </li>
                         </ul>
                     </div>
@@ -123,7 +123,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://www.tiktok.com/@pk.pmii.unusia.ka?_t=8kmMsBB2Y78&_r=1">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
