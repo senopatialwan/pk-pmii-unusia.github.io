@@ -35,6 +35,9 @@
                 <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
                 </li>
+                <li class="<?php echo (Route::currentRouteName() == 'visi-misi') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('visi-misi') }}">Visi Misi</a>
+                </li>
                 <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
                 </li>

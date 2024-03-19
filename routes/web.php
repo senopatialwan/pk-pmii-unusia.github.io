@@ -46,6 +46,7 @@ Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
 Route::view('cetak-kta', 'pages.cetak-kta')->name('cetak-kta');
 Route::get('pengajuan-kta', [PengajuanKTAController::class, 'index'])->name('pengajuan-kta');
+Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 
 // *Admin auth
 Route::view('masuk', 'auth.masuk')->name('masuk');
