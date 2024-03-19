@@ -44,8 +44,8 @@
                 <li class="<?php echo (Route::currentRouteName() == 'tim') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                 </li>
-                <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
-                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
+                <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blogs') ? 'active' : ''; ?>">
+                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blogs') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
                 </li>
             </ul>
         </div>

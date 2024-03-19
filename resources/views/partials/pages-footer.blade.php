@@ -4,7 +4,7 @@
             <div class="f-items">
                 <div class="col-md-4 col-sm-6 equal-height item">
                     <div class="f-item">
-                        <img src="assets/img/pmii/logo-web.png" alt="Logo" style="width: 20em" />
+                        <img src="{{asset('assets/img/pmii/logo-web.png')}}" alt="Logo" style="width: 20em" />
                         <p>Website Resmi Pengurus Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor.</p>
                         <p>
                             <i>Daftar email Anda untuk mendapatkan informasi tambahan melalui email tersebut.</i>

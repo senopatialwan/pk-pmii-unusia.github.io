@@ -27,7 +27,7 @@ use App\Http\Controllers\Pages\PagesBlogController;
 
 
 Route::get('/blogs', [PagesBlogController::class, 'index'])->name('pages.blogs.index');
-Route::get('/blogs/{id}', [PagesBlogController::class, 'show'])->name('pages.blogs.show');
+Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.blogs.show');
 
 
 
