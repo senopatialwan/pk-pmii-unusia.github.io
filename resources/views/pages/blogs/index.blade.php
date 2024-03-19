@@ -54,7 +54,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 equal-height {{ $blog->category_id }}">
                             <div class="item">
                                 <div class="thumb">
-                                    <a href="{{ route('pages.blogs.show', ['id' => $blog->id]) }}">
+                                    <a href="{{ route('pages.blogs.show', ['title' => $blog->title]) }}">
                                         <img src="{{ asset('storage/' . $blog->image) }}" alt="Thumb" />
                                     </a>
                                 </div>
@@ -63,10 +63,10 @@
                                         <div class="date">{{ $blog->created_at->format('d M, Y') }}</div>
                                         <h4>
                                             <a
-                                                href="{{ route('pages.blogs.show', ['id' => $blog->id]) }}">{{ $blog->title }}</a>
+                                                href="{{ route('pages.blogs.show', ['title' => $blog->title]) }}">{{ $blog->title }}</a>
                                         </h4>
                                         <p>{{ Str::limit($blog->content, 70) }}</p>
-                                        <a href="{{ route('pages.blogs.show', ['id' => $blog->id]) }}">Read More <i
+                                        <a href="{{ route('pages.blogs.show', ['title' => $blog->title]) }}">Read More <i
                                                 class="fas fa-angle-right"></i></a>
                                     </div>
                                     <div class="meta">

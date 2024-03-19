@@ -35,9 +35,14 @@ class PagesBlogController extends Controller
         return view('pages.blogs.index', compact('blogs', 'categories', 'tags'));
     }
 
-    public function show($id)
+    public function show($title)
     {
-        $blog = Blog::findOrFail($id);
-        return view('pages.blogs.show', compact('blog'));
+        // Ubah kembali judul yang sudah diformatkan untuk URL menjadi bentuk asli
+    $title = str_replace('-', ' ', $title);
+    
+    // Cari blog berdasarkan judul
+    $blog = Blog::where('title', $title)->firstOrFail();
+    
+    return view('pages.blogs.show', compact('blog'));
     }
 }
