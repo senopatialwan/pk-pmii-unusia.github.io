@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'Pengurus Komisariat')
+@section('title', 'Berita | PMII UNUSIA BOGOR')
 
 @section('content')
     <!-- Start Breadcrumb 

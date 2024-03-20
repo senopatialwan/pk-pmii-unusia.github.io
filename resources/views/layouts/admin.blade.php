@@ -2,6 +2,7 @@
 
 @section('head')
     <!-- CORE CSS FRAMEWORK - START -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
     <link href="{{ url(asset('assets/plugins/pace/pace-theme-flash.css')) }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ url(asset('assets/plugins/bootstrap/css/bootstrap.min.css')) }}" rel="stylesheet" type="text/css" />
     <link href="{{ url(asset('assets/plugins/bootstrap/css/bootstrap-theme.min.css')) }}" rel="stylesheet" type="text/css" />
@@ -93,8 +94,10 @@
     </script>
     <script src="{{ url(asset('assets/js/chart-sparkline.js')) }}" type="text/javascript"></script>
 
+
    
     <!-- Sidebar Graph - END -->
 
     <!-- General section box modal start -->
+    @yield('scripts')
 @endsection
