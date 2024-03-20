@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'About | PMII UNUSIA BOGOR')
+@section('title', 'Tentang | PMII UNUSIA BOGOR')
 
 @section('content')
     <div id="about" class="features-area reverse shadow-less default-padding">

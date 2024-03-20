@@ -30,7 +30,7 @@
                                     <h1>
                                         <span>BERKARAKTER</span>
                                     </h1>
-                                    <p>Membangun Mahasiswa Berkualitas, Berintegritas, dan Berkontribusi untuk Masa Depan Bangsa Bersama Pergerakan Mahasiswa Islam Indonesia.</p>
+                                    <p>Membangun Mahasiswa Berkualitas, Berintegritas, dan Berkontribusi untuk Masa Depan Bangsa dan Negara Bersama PMII.</p>
                                     <a class="btn btn-theme border btn-md smooth-menu" href="#about">Mulai Pergerakan!</a>
                                 </div>
                                 <!-- End Single Item -->
@@ -106,7 +106,7 @@
                                     </div>
                                     <div class="info">
                                         <h4>FILOSOFI LOGO PMII</h4>
-                                        <p>Simbol Perjuangan, Ketahanan, Kesetiaan, Keilmuan dan Kemuliaan Menyatu dalam Logo PMII.</p>
+                                        <p>Simbol Perjuangan, Ketahanan, Kesetiaan dan Keilmuan Menyatu dalam Logo PMII.</p>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 info">
                     <h2> ANGGOTA KOMISARIAT & RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
-                    <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki 1 Kepengurusan Komisariat beserta KOPRI Komisariat & Memiliki 5 Rayon Aktif beserta KOPRI Rayon dengan Total Anggota Sebanyak .... </p>
+                    <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki <b>1 Kepengurusan Komisariat</b> beserta <b>KOPRI Komisariat</b> & Memiliki <b>5 Rayon Aktif</b> beserta <b>KOPRI Rayon</b> dengan Total Anggota Sebanyak .... </p>
                     <div class="fun-facts">
                         <h3>KELUARGA BESAR KAMI</h3>
                         <div class="row">

@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'Pengurus Komisariat')
+@section('title', 'Visi Misi | PMII UNUSIA BOGOR')
 
 @section('content')
     <!-- Start Team Area

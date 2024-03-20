@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'Produk-Hukum | PMII UNUSIA BOGOR')
+@section('title', 'Produk Hukum | PMII UNUSIA BOGOR')
 
 @section('content')
 

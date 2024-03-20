@@ -28,8 +28,8 @@
                             <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
                                 <a class="smooth-menu" href="/">Beranda</a>
                             </li>
-                            <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
-                                <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'visi-misi') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('visi-misi') }}">Visi Misi</a>
                             </li>
                             <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
                                 <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
@@ -118,13 +118,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-5 text-right social">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://www.tiktok.com/@pk.pmii.unusia.ka?_t=8kmMsBB2Y78&_r=1">
-                                    <img src="{{asset('assets/img/pmii/logo-tiktok.svg')}}" alt="Logo" class="w-10 h-10" />
+                                    <img src="{{asset('assets/img/pmii/tik-tok.png')}}" alt="Logo" style="width: 1.1em" />
                                 </a>
                             </li>
                             <li>

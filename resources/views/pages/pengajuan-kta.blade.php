@@ -13,18 +13,20 @@
                   <a href="/">
                     <img src="assets/img/pmii/logo-web.png" style="width: 15em" alt="Login" />
                   </a>
-                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota Khusus PMII UNUSIA Cabang Kabupaten Bogor. <strong>
+                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota <b>Khusus</b> PMII UNUSIA Cabang Kabupaten Bogor. <strong>
                       <br />
-                      <i>Informasimu akan disimpan dengan Aman </i>
+                      <i>Informasimu akan disimpan dengan Aman! </i>
                     </strong>
                   </p>
-                  <h5>
-                    <b>Pastikan Mengisi Formulir Sesuai Ketentuan!</b>
-                  </h5>
-                  <ol style="color: red">
-                    <li>Kesalahan Data Pada Dokumen Berakibat Penolakan</li>
-                    <li>Pemalsuan Dokumen Berakibat Masuk Ke Daftar Blacklist</li>
-                  </ol>
+                  <div style="background-color: #f5d81d; padding: 15px; margin: 5px; border-radius: 10px;">
+                    <h5 style="text-align: center; color: #030894">
+                      <b>Pastikan Mengisi Formulir Sesuai Ketentuan!</b>
+                    </h5>
+                    <ol style="padding-left: 15px;">
+                        <li>Kesalahan Data Pada Dokumen Berakibat Penolakan</li>
+                        <li>Pemalsuan Dokumen Berakibat Masuk Ke Daftar Blacklist</li>
+                      </ol>
+                  </div>
                 </div>
                 <div class="col-md-6 content">
                   <h4>Formulir Pengajuan KTA</h4>
@@ -100,7 +102,7 @@
                     {{-- *Sertifikat Mapaba --}}
                     <div class="col-lg-12 col-md-12"> @error('sertifikat_mapaba') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
                         <div class="form-group">
-                          <i>Sertifikat Mapaba*</i>
+                          <i>Sertifikat Mapaba* <b>(PDF)</b></i>
                           <input class="form-control" name="sertifikat_mapaba" placeholder="Sertifikat Mapaba" type="file" />
                         </div>
                       </div>
@@ -108,7 +110,7 @@
                     {{-- *Foto --}}
                     <div class="col-lg-12 col-md-12"> @error('foto') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
                         <div class="form-group">
-                          <i>Foto Formal Memakai Atribut PMII*</i>
+                          <i>Foto Formal Memakai Atribut PMII* <b>(JPG)</b></i>
                           <input class="form-control" name="foto" placeholder="Foto" type="file" />
                         </div>
                       </div>
@@ -116,7 +118,7 @@
                     {{-- *CV --}}
                     <div class="col-lg-12 col-md-12"> @error('cv') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
                         <div class="form-group">
-                          <i>Curriculum Vitae (CV)*</i>
+                          <i>Curriculum Vitae (CV)* <b>(PDF)</b></i>
                           <input class="form-control" name="cv" placeholder="CV" type="file" />
                         </div>
                       </div>
@@ -124,7 +126,7 @@
                     {{-- *KTM --}}
                     <div class="col-lg-12 col-md-12"> @error('ktm') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
                         <div class="form-group">
-                          <i>Kartu Tanda Mahasiswa (KTM)*</i>
+                          <i>Kartu Tanda Mahasiswa (KTM)* <b>(PDF)</b></i>
                           <input class="form-control" name="ktm" placeholder="KTM" type="file" />
                         </div>
                       </div>

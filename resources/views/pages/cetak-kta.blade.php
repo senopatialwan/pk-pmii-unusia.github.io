@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'CETAK KTA | PMII UNUSIA BOGOR')
+@section('title', 'Cetak KTA | PMII UNUSIA BOGOR')
 
 
 
