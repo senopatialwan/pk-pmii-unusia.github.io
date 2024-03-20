@@ -16,11 +16,11 @@ class Anggota extends Model
         "nama_lengkap",
         "email",
         "nim",
-        "rayon",
+        "alamat",
+        "rayon_id",
         "fakultas_id",
         "prodi_id",
-        "alamat",
-        "angkatan_mapaba",
+        "angkatan_mapaba_id",
         "nomor_telepon",
         "sertifikat_mapaba",
         "foto",
@@ -36,6 +36,14 @@ class Anggota extends Model
     public function prodi(): BelongsTo
     {
         return $this->belongsTo(ProgramStudi::class, 'prodi_id');
+    }
+    public function rayon(): BelongsTo
+    {
+        return $this->belongsTo(Rayon::class, 'rayon_id');
+    }
+    public function angkatan_mapaba(): BelongsTo
+    {
+        return $this->belongsTo(AngkatanMapaba::class, 'angkatan_mapaba_id');
     }
     // if email sama dengan user
     // if email sama dengan pengurus

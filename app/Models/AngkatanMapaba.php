@@ -10,7 +10,7 @@ class AngkatanMapaba extends Model
 {
     use Sushi;
     protected $rows = [
-        ['id' => 1, 'tahun'=> 2015],
+        ['id' => 1, 'tahun'=> 2012],
         // TODO: Model angkatan mapaba
     ];
 }

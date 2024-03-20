@@ -49,7 +49,7 @@ class AnggotaController extends Controller
 
     public function verifikasiKTA()
     {
-        $anggota_verifikasi = Anggota::get();
+        $anggota_verifikasi = Anggota::where('status', 0)->get();
         $data = [
             'anggota_verifikasi' => $anggota_verifikasi
         ];

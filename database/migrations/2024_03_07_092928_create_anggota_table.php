@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('email');
             $table->string('nim');
-            $table->string('rayon');
+            $table->string('alamat');
+            $table->unsignedBigInteger('rayon_id');
             $table->unsignedBigInteger('fakultas_id');
             $table->unsignedBigInteger('prodi_id');
-            $table->string('alamat');
-            $table->string('angkatan_mapaba');
+            $table->unsignedBigInteger('angkatan_mapaba_id');
             $table->string('nomor_telepon');
             $table->string('sertifikat_mapaba')->nullable();
             $table->string('foto')->nullable();
