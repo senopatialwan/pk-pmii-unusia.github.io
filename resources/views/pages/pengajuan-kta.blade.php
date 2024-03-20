@@ -13,20 +13,18 @@
                   <a href="/">
                     <img src="assets/img/pmii/logo-web.png" style="width: 15em" alt="Login" />
                   </a>
-                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota <b>Khusus</b> PMII UNUSIA Cabang Kabupaten Bogor. <strong>
+                  <p> Lengkapi Formulir dan Dokumen Untuk Membuat Kartu Tanda Anggota Khusus PMII UNUSIA Cabang Kabupaten Bogor. <strong>
                       <br />
-                      <i>Informasimu akan disimpan dengan Aman! </i>
+                      <i>Informasimu akan disimpan dengan Aman </i>
                     </strong>
                   </p>
-                  <div style="background-color: #f5d81d; padding: 15px; margin: 5px; border-radius: 10px;">
-                    <h5 style="text-align: center; color: #030894">
-                      <b>Pastikan Mengisi Formulir Sesuai Ketentuan!</b>
-                    </h5>
-                    <ol style="padding-left: 15px;">
-                        <li>Kesalahan Data Pada Dokumen Berakibat Penolakan</li>
-                        <li>Pemalsuan Dokumen Berakibat Masuk Ke Daftar Blacklist</li>
-                      </ol>
-                  </div>
+                  <h5>
+                    <b>Pastikan Mengisi Formulir Sesuai Ketentuan!</b>
+                  </h5>
+                  <ol style="color: red">
+                    <li>Kesalahan Data Pada Dokumen Berakibat Penolakan</li>
+                    <li>Pemalsuan Dokumen Berakibat Masuk Ke Daftar Blacklist</li>
+                  </ol>
                 </div>
                 <div class="col-md-6 content">
                     <h4>Formulir Pengajuan KTA</h4>
@@ -112,76 +110,111 @@
                                 </select>
                             </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *Alamat --}}
-                    <div class="col-lg-12 col-md-12"> @error('alamat') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <input class="form-control" name="alamat" placeholder="Alamat Lengkap" type="text" />
+
+                        {{-- *Alamat --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('alamat')
+                            <div style="color: redt">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <input class="form-control" name="alamat" placeholder="Alamat Lengkap" type="text" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *Angkatan Mapaba --}}
-                    <div class="col-lg-12 col-md-12"> @error('angkatan_mapaba') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <input class="form-control" name="angkatan_mapaba" placeholder="Angkatan Mapaba" type="number" />
+
+                        {{-- *Angkatan Mapaba --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('angkatan_mapaba')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <input class="form-control" name="angkatan_mapaba" placeholder="Angkatan Mapaba" type="number" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *Nomor Telepon --}}
-                    <div class="col-lg-12 col-md-12"> @error('nomor_telepon') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" />
+
+                        {{-- *Nomor Telepon --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('nomor_telepon')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *DOKUMEN UPLOAD --}}
-                    <h5 style="text-align: center">
-                      <b>DOKUMEN UPLOAD</b>
-                    </h5>
-                    {{-- *Sertifikat Mapaba --}}
-                    <div class="col-lg-12 col-md-12"> @error('sertifikat_mapaba') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <i>Sertifikat Mapaba* <b>(PDF)</b></i>
-                          <input class="form-control" name="sertifikat_mapaba" placeholder="Sertifikat Mapaba" type="file" />
+
+                        {{-- *DOKUMEN UPLOAD --}}
+                        <h5 style="text-align: center">
+                            <b>DOKUMEN UPLOAD</b>
+                        </h5>
+
+                        {{-- *Sertifikat Mapaba --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('sertifikat_mapaba')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <i>Sertifikat Mapaba <b>PDF</b></i>
+                                    <input class="form-control" name="sertifikat_mapaba" placeholder="Sertifikat Mapaba" type="file" accept="application/pdf" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *Foto --}}
-                    <div class="col-lg-12 col-md-12"> @error('foto') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <i>Foto Formal Memakai Atribut PMII* <b>(JPG)</b></i>
-                          <input class="form-control" name="foto" placeholder="Foto" type="file" />
+
+                        {{-- *Foto --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('foto')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <i>Foto Formal Memakai Atribut PMII <b>JPG, JPEG, PNG</b></i>
+                                    <input class="form-control" name="foto" placeholder="Foto" type="file" accept="image/png, image/jpeg, image/jpg" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *CV --}}
-                    <div class="col-lg-12 col-md-12"> @error('cv') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <i>Curriculum Vitae (CV)* <b>(PDF)</b></i>
-                          <input class="form-control" name="cv" placeholder="CV" type="file" />
+
+                        {{-- *CV --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('cv')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <i>Curriculum Vitae (CV) <b>PDF, DOCX, DOC</b></i>
+                                    <input class="form-control" name="cv" placeholder="CV" type="file"  accept="application/pdf, .doc, .docx" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                    {{-- *KTM --}}
-                    <div class="col-lg-12 col-md-12"> @error('ktm') <div style="color: red">{{ $message }}</div> @enderror <div class="row">
-                        <div class="form-group">
-                          <i>Kartu Tanda Mahasiswa (KTM)* <b>(PDF)</b></i>
-                          <input class="form-control" name="ktm" placeholder="KTM" type="file" />
+
+                        {{-- *KTM --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('ktm')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <i>Kartu Tanda Mahasiswa (KTM) <b>JPG, JPEG, PNG</b></i>
+                                    <input class="form-control" name="ktm" placeholder="KTM" type="file" accept="image/png, image/jpeg, image/jpg" required />
+                                </div>
+                            </div>
                         </div>
-                      </div>
+
+                        {{-- *Submit --}}
+                        <div class="col-lg-12 col-md-12">
+                            <div class="row">
+                                <button type="submit">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="sign-up">
+                        <p>Sudah terdata oleh Admin? <a href="{{ route('cetak-kta') }}">Cetak KTA PMII</a>
+                        </p>
                     </div>
-                    {{-- *Submit --}}
-                    <div class="col-lg-12 col-md-12">
-                      <div class="row">
-                        <button type="submit">Kirim</button>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="sign-up">
-                    <p>Sudah terdata oleh Admin? <a href="{{ route('cetak-kta') }}">Cetak KTA PMII</a>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

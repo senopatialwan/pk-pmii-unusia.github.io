@@ -29,34 +29,50 @@
         <h4>Formulir Pengajuan KTA</h4>
         <form action="#">
             <div class="col-lg-12 col-md-12">
+                @error('nama_lengkap')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Nama Lengkap" type="text" />
+                        <input class="form-control" name="nama_lengkap" placeholder="Nama Lengkap" type="text" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('email')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Email Aktif" type="email" />
+                        <input class="form-control" name="email" placeholder="Email Aktif" type="email" required/>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-12 col-md-12">
+                @error('nim')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control" name="nim" placeholder="Nomor Induk Mahasiswa" type="number" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('rayon_id')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Nomor Induk Mahasiswa" type="text" />
+                        <input class="form-control" placeholder="Pengurus Rayon / Komisariat" type="text" />
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
-                <div class="row">
-                    <div class="form-group">
-                        <input class="form-control" placeholder="Pengurus Rayon / Komisariat" type="email" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
+                @error('fakultas_id')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <input class="form-control" placeholder="Fakultas" type="text" />
@@ -64,6 +80,9 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('prodi_id')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <input class="form-control" placeholder="Program Studi" type="email" />
@@ -71,13 +90,19 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('alamat')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Alamat Lengkap" type="text" />
+                        <input class="form-control" name="alamat" placeholder="Alamat Lengkap" type="text" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('angkatan_mapaba_id')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <input class="form-control" placeholder="Angkatan Mapaba" type="email" />
@@ -85,9 +110,12 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('nomor_telepon')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Nomor Telepon" type="email" />
+                        <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" required/>
                     </div>
                 </div>
             </div>
@@ -97,8 +125,8 @@
             <div class="col-lg-12 col-md-12">
                 <div class="row">
                     <div class="form-group">
-                        <i>Sertifikat Mapaba*</i>
-                        <input class="form-control" placeholder="Sertifikat Mapaba" type="file" />
+                        <i>Sertifikat Mapaba* <b>(PDF)</b></i>
+                        <input class="form-control" placeholder="Sertifikat Mapaba" type="file" required/>
                     </div>
                 </div>
             </div>
