@@ -65,7 +65,12 @@
                 @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Pengurus Rayon / Komisariat" type="text" />
+                        <select class="form-control" name="rayon_id" required>
+                            <option selected disabled>Pilih Pengurus Rayon / Komisariat</option>
+                            @foreach ($rayon as $rayon)
+                                <option value="{{ $rayon->id }}">{{ $rayon->nama }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>
@@ -75,7 +80,12 @@
                 @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Fakultas" type="text" />
+                        <select class="form-control" name="fakultas_id" required>
+                            <option selected disabled>Pilih Fakultas</option>
+                            @foreach ($fakultas as $fakultas)
+                                <option value="{{ $fakultas->id }}">{{ $fakultas->nama }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>
@@ -85,7 +95,12 @@
                 @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Program Studi" type="email" />
+                        <select class="form-control" name="prodi_id" required>
+                            <option selected disabled>Pilih Program Studi</option>
+                            @foreach ($prodi as $prodi)
+                                <option value="{{ $prodi->id }}">{{ $prodi->nama }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>
@@ -105,7 +120,12 @@
                 @enderror
                 <div class="row">
                     <div class="form-group">
-                        <input class="form-control" placeholder="Angkatan Mapaba" type="email" />
+                        <select class="form-control" name="angkatan_mapaba_id" required>
+                            <option selected disabled>Pilih Angkatan Mapaba</option>
+                            @foreach ($angkatan_mapaba as $angkatan_mapaba)
+                                <option value="{{ $angkatan_mapaba->id }}">Angkatan {{ $angkatan_mapaba->tahun }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
             </div>
@@ -123,40 +143,52 @@
                 <b>DOKUMEN UPLOAD</b>
             </h5>
             <div class="col-lg-12 col-md-12">
+                @error('sertifikat_mapaba')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <i>Sertifikat Mapaba* <b>(PDF)</b></i>
-                        <input class="form-control" placeholder="Sertifikat Mapaba" type="file" required/>
+                        <input class="form-control" name="sertifikat_mapaba" placeholder="Sertifikat Mapaba" type="file" accept="application/pdf" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('sertifikat_mapaba')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <i>Foto Formal Memakai Atribut PMII*</i>
-                        <input class="form-control" placeholder="Foto" type="file" />
+                        <input class="form-control" name="foto" placeholder="Foto" type="file" accept="image/png, image/jpeg, image/jpg" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('cv')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <i>Curriculum Vitae (CV)*</i>
-                        <input class="form-control" placeholder="CV" type="file" />
+                        <input class="form-control" name="cv" placeholder="CV" type="file" accept="application/pdf, .doc, .docx" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('ktm')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
                 <div class="row">
                     <div class="form-group">
                         <i>Kartu Tanda Mahasiswa (KTM)*</i>
-                        <input class="form-control" placeholder="KTM" type="file" />
+                        <input class="form-control" name="ktm" placeholder="KTM" type="file" accept="image/png, image/jpeg, image/jpg" required/>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
                 <div class="row">
-                    <button type="submit">Simpan </button>
+                    <button type="submit">Simpan</button>
                 </div>
             </div>
         </form>

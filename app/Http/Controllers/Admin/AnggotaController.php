@@ -3,10 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Admin\StoreAnggotaRequest;
 use App\Models\Anggota;
+use App\Models\AngkatanMapaba;
 use App\Models\ProgramStudi;
 use Illuminate\Http\Request;
 use App\Models\Fakultas;
+use App\Models\Rayon;
 
 class AnggotaController extends Controller
 {
@@ -22,10 +25,14 @@ class AnggotaController extends Controller
 
     public function create()
     {
-        return view('admin.anggota.create');
+        $rayon = Rayon::all();
+        $fakultas = Fakultas::all();
+        $prodi = ProgramStudi::all();
+        $angkatan_mapaba = AngkatanMapaba::all();
+        return view('admin.anggota.create', compact('rayon','fakultas','prodi','angkatan_mapaba'));
     }
 
-    public function store($request)
+    public function store(StoreAnggotaRequest $request)
     {
         //
     }
