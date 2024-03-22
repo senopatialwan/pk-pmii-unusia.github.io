@@ -8,6 +8,8 @@ use App\Models\Fakultas;
 use App\Models\ProgramStudi;
 use App\Traits\Upload;
 use App\Models\Anggota;
+use App\Models\AngkatanMapaba;
+use App\Models\Rayon;
 
 class PengajuanKTAController extends Controller
 {
@@ -15,14 +17,12 @@ class PengajuanKTAController extends Controller
 
     public function index()
     {
+        $rayon = Rayon::all();
         $fakultas = Fakultas::all();
         $prodi = ProgramStudi::all();
-        // TODO: Model Rayon/Komi dan AngkatanMapaba
-        $data = [
-            "fakultas"=> $fakultas,
-            "prodi"=> $prodi
-        ];
-        return view("pages.pengajuan-kta", $data);
+        $angkatan_mapaba = AngkatanMapaba::all();
+
+        return view("pages.pengajuan-kta", compact('rayon', 'fakultas', 'prodi', 'angkatan_mapaba'));
     }
 
     public function store(PengajuanKTARequest $request)
