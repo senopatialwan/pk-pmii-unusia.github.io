@@ -54,7 +54,7 @@ class AnggotaController extends Controller
         return redirect()->back()->with([
             'message' => 'Anggota berhasil ditambahkan.',
             'alert-type' => 'success',
-        ]);;
+        ]);
     }
 
     public function edit()

@@ -46,7 +46,6 @@ class StoreAnggotaRequest extends FormRequest
             'email' => 'Kolom :attribute harus berupa alamat email yang valid.',
             'integer' => 'Kolom :attribute harus berupa angka.',
             'unique' => ':attribute sudah terdaftar, silakan gunakan yang lain.',
-            'exists' => 'Nilai yang dimasukkan pada kolom :attribute tidak valid.',
             'file' => 'Kolom :attribute harus berupa file.',
             'mimes' => 'Kolom :attribute harus berupa file dengan tipe: :values.',
             'max' => 'Ukuran file pada kolom :attribute tidak boleh melebihi :max kilobita.',

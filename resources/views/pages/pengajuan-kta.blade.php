@@ -27,6 +27,11 @@
                   </ol>
                 </div>
                 <div class="col-md-6 content">
+                    @if(session('message'))
+                        <div class="mg-t-20 alert alert-{{ session('alert-type') }} tx-semibold">
+                            {{ session('message') }}
+                        </div>
+                    @endif
                     <h4>Formulir Pengajuan KTA</h4>
                     <form action="{{ route('pengajuan-kta.upload') }}" method="post" enctype="multipart/form-data">
                         @csrf
@@ -69,48 +74,6 @@
                             </div>
                         </div>
 
-                        {{-- *Rayon --}}
-                        <div class="col-lg-12 col-md-12">
-                            @error('rayon')
-                            <div style="color: red">{{ $message }}</div>
-                            @enderror
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" name="rayon" placeholder="Pengurus Rayon" type="text" required />
-                                </div>
-                            </div>
-                        </div>
-
-                        {{-- *Fakultas --}}
-                        <div class="col-lg-12 col-md-12">
-                            @error('fakultas_id')
-                            <div style="color: red">{{ $message }}</div>
-                            @enderror
-                            <div class="row">
-                                <select class="form-control" name="fakultas_id" required>
-                                    <option value="" selected='selected' disabled>Pilih Fakultas</option>
-                                    @foreach ($fakultas as $fakultas)
-                                        <option value="{{ $fakultas->id }}">{{ $fakultas->nama }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
-                        {{-- *Prodi --}}
-                        <div class="col-lg-12 col-md-12 mb-20">
-                            @error('prodi_id')
-                            <div style="color: red">{{ $message }}</div>
-                            @enderror
-                            <div class="row">
-                                <select class="form-control" name="prodi_id" required>
-                                    <option value="" selected='selected' disabled>Pilih Program Studi</option>
-                                    @foreach ($prodi as $prodi)
-                                        <option value="{{ $prodi->id }}">{{ $prodi->nama }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
                         {{-- *Alamat --}}
                         <div class="col-lg-12 col-md-12">
                             @error('alamat')
@@ -123,18 +86,6 @@
                             </div>
                         </div>
 
-                        {{-- *Angkatan Mapaba --}}
-                        <div class="col-lg-12 col-md-12">
-                            @error('angkatan_mapaba')
-                            <div style="color: red">{{ $message }}</div>
-                            @enderror
-                            <div class="row">
-                                <div class="form-group">
-                                    <input class="form-control" name="angkatan_mapaba" placeholder="Angkatan Mapaba" type="number" required />
-                                </div>
-                            </div>
-                        </div>
-
                         {{-- *Nomor Telepon --}}
                         <div class="col-lg-12 col-md-12">
                             @error('nomor_telepon')
@@ -143,6 +94,74 @@
                             <div class="row">
                                 <div class="form-group">
                                     <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" required />
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- *Rayon --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('rayon')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <select class="form-control" name="rayon_id" required>
+                                        <option value="" selected='selected' disabled>Pilih Rayon / Komisariat</option>
+                                        @foreach ($rayon as $rayon)
+                                            <option value="{{ $rayon->id }}">{{ $rayon->nama }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- *Fakultas --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('fakultas_id')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <select class="form-control" name="fakultas_id" required>
+                                        <option value="" selected='selected' disabled>Pilih Fakultas</option>
+                                        @foreach ($fakultas as $fakultas)
+                                            <option value="{{ $fakultas->id }}">{{ $fakultas->nama }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- *Prodi --}}
+                        <div class="col-lg-12 col-md-12 mb-20">
+                            @error('prodi_id')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <select class="form-control" name="prodi_id" required>
+                                        <option value="" selected='selected' disabled>Pilih Program Studi</option>
+                                        @foreach ($prodi as $prodi)
+                                            <option value="{{ $prodi->id }}">{{ $prodi->nama }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- *Angkatan Mapaba --}}
+                        <div class="col-lg-12 col-md-12">
+                            @error('angkatan_mapaba')
+                            <div style="color: red">{{ $message }}</div>
+                            @enderror
+                            <div class="row">
+                                <div class="form-group">
+                                    <select class="form-control" name="angkatan_mapaba_id" required>
+                                        <option value="" selected='selected' disabled>Pilih Angkatan Mapaba</option>
+                                        @foreach ($angkatan_mapaba as $angkatan_mapaba)
+                                            <option value="{{ $angkatan_mapaba->id }}">Angkatan {{ $angkatan_mapaba->tahun }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                         </div>

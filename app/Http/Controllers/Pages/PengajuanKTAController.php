@@ -28,16 +28,19 @@ class PengajuanKTAController extends Controller
     public function store(PengajuanKTARequest $request)
     {
         $anggota = Anggota::create($request->all());
-        $sertifikat_mapaba = $this->UploadFile($request->file('sertifikat_mapaba'), 'anggota/sertifikat_mapaba', $request->nim);
-        $foto = $this->UploadFile($request->file('foto'), 'anggota/foto', $request->nim);
-        $cv = $this->UploadFile($request->file('cv'), 'anggota/cv', $request->nim);
-        $ktm = $this->UploadFile($request->file('ktm'), 'anggota/ktm', $request->nim);
+        $sertifikat_mapaba = $this->UploadFile($request->file('sertifikat_mapaba'), '/anggota/' . $anggota->nim, 'sertifikat_mapaba');
+        $foto = $this->UploadFile($request->file('foto'), '/anggota/' . $anggota->nim, 'foto');
+        $cv = $this->UploadFile($request->file('cv'), '/anggota/' . $anggota->nim, 'cv');
+        $ktm = $this->UploadFile($request->file('ktm'), '/anggota/' . $anggota->nim, 'ktm');
         $anggota->update([
             'sertifikat_mapaba' => 'storage/' . $sertifikat_mapaba,
             'foto' => 'storage/' . $foto,
             'cv' => 'storage/' . $cv,
             'ktm' => 'storage/' . $ktm,
         ]);
-        return redirect()->back();
+        return redirect()->back()->with([
+            'message' => 'Kamu berhasil melakukan pengajuan KTA.',
+            'alert-type' => 'success',
+        ]);
     }
 }
