@@ -39,13 +39,15 @@
 									</tr>
 								</thead>
 								<tbody>
+                                {{-- TODO: Index anggota yang sudah diterima --}}
+                                @foreach ($anggota as $anggota)
 									<tr>
-										<td>2026027</td>
-										<td>Saeful Mu'minin</td>
-										<td>Rayon Hamzah</td>
-										<td>FTIK</td>
-										<td>2020</td>
-										<td>Teknik Informatika</td>
+										<td>{{ $anggota->nim }}</td>
+										<td>{{ $anggota->nama_lengkap }}</td>
+										<td>{{ $anggota->rayon->nama }}</td>
+										<td>{{ $anggota->fakultas->nama }}</td>
+										<td>{{ $anggota->prodi->nama }}</td>
+										<td>{{ $anggota->angkatan_mapaba->tahun }}</td>
 										<td>
 											<a href="{{route('admin.anggota.show')}}" class="btn border-none rounded-sm btn-info px-4 py-2">
 												<i class="fa fa-eye"></i> Lihat Lengkap </a>
@@ -55,6 +57,7 @@
 												<i class="fa fa-trash"></i> Hapus </a>
 										</td>
 									</tr>
+                                @endforeach
 								</tbody>
 							</table>
 						</div>

@@ -17,7 +17,11 @@ class AnggotaController extends Controller
     use Upload;
     public function index()
     {
-        return view('admin.anggota.index');
+        $anggota = Anggota::where('status', 1)->get();
+        $data = [
+            'anggota' => $anggota
+        ];
+        return view('admin.anggota.index', $data);
     }
 
     public function show()
