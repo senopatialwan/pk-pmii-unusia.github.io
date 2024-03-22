@@ -26,8 +26,16 @@
     </div>
     <div class="clearfix"></div>
     <div class="col-md-6 content">
+        @if(session('message'))
+            <div class="mg-t-20 alert alert-{{ session('alert-type') }} tx-semibold">
+                {{ session('message') }}
+            </div>
+        @endif
         <h4>Formulir Pengajuan KTA</h4>
-        <form action="#">
+        <form action="{{ route('admin.anggota.store') }}"method="POST" enctype="multipart/form-data">
+            @csrf
+
+            <input type="hidden" name="status" value="1">
             <div class="col-lg-12 col-md-12">
                 @error('nama_lengkap')
                     <div style="color: red">{{ $message }}</div>

@@ -33,6 +33,7 @@ Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.
 
 Route::post('upload-files', [FileController::class, 'store'])->name('upload');
 Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class, 'store'])->name('pengajuan-kta.upload');
+Route::post('v1/admin/anggota/store', [AnggotaController::class, 'store'])->name('admin.anggota.store');
 
 Route::post('v1/admin/verifikasi-kta', [AnggotaController::class, 'handleVerifikasiKTA'])->name('admin.anggota.verifikasi-kta.handle');
 

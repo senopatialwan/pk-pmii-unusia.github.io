@@ -10,9 +10,11 @@ use App\Models\ProgramStudi;
 use Illuminate\Http\Request;
 use App\Models\Fakultas;
 use App\Models\Rayon;
+use App\Traits\Upload;
 
 class AnggotaController extends Controller
 {
+    use Upload;
     public function index()
     {
         return view('admin.anggota.index');
@@ -25,16 +27,30 @@ class AnggotaController extends Controller
 
     public function create()
     {
-        $rayon = Rayon::all();
-        $fakultas = Fakultas::all();
-        $prodi = ProgramStudi::all();
-        $angkatan_mapaba = AngkatanMapaba::all();
+        $rayon = Rayon::get();
+        $fakultas = Fakultas::get();
+        $prodi = ProgramStudi::get();
+        $angkatan_mapaba = AngkatanMapaba::get();
         return view('admin.anggota.create', compact('rayon','fakultas','prodi','angkatan_mapaba'));
     }
 
     public function store(StoreAnggotaRequest $request)
     {
-        //
+        $anggota = Anggota::create($request->all());
+        $sertifikat_mapaba = $this->UploadFile($request->file('sertifikat_mapaba'), '/anggota/' . $anggota->nim, 'sertifikat_mapaba');
+        $foto = $this->UploadFile($request->file('foto'), '/anggota/' . $anggota->nim, 'foto');
+        $cv = $this->UploadFile($request->file('cv'), '/anggota/' . $anggota->nim, 'cv');
+        $ktm = $this->UploadFile($request->file('ktm'), '/anggota/' . $anggota->nim, 'ktm');
+        $anggota->update([
+            'sertifikat_mapaba' => 'storage/' . $sertifikat_mapaba,
+            'foto' => 'storage/' . $foto,
+            'cv' => 'storage/' . $cv,
+            'ktm' => 'storage/' . $ktm,
+        ]);
+        return redirect()->back()->with([
+            'message' => 'Anggota berhasil ditambahkan.',
+            'alert-type' => 'success',
+        ]);;
     }
 
     public function edit()
