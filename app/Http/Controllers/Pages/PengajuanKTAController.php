@@ -15,7 +15,7 @@ class PengajuanKTAController extends Controller
 {
     use Upload;
 
-    public function index()
+    public function show()
     {
         $rayon = Rayon::all();
         $fakultas = Fakultas::all();

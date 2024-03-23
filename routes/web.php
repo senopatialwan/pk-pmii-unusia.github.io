@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\PengurusController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Pages\CetakKTAController;
 use App\Http\Controllers\Pages\PagesBlogController;
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,7 @@ Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.
 
 Route::post('upload-files', [FileController::class, 'store'])->name('upload');
 Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class, 'store'])->name('pengajuan-kta.upload');
+Route::post('v1/user/cetak-kta', [CetakKTAController::class, 'store'])->name('cetak-kta.store');
 Route::post('v1/admin/anggota/store', [AnggotaController::class, 'store'])->name('admin.anggota.store');
 
 Route::post('v1/admin/verifikasi-kta', [AnggotaController::class, 'handleVerifikasiKTA'])->name('admin.anggota.verifikasi-kta.handle');
@@ -45,8 +47,8 @@ Route::view('tim', 'pages.tim')->name('tim');
 Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
-Route::view('cetak-kta', 'pages.cetak-kta')->name('cetak-kta');
-Route::get('pengajuan-kta', [PengajuanKTAController::class, 'index'])->name('pengajuan-kta');
+Route::get('cetak-kta', [CetakKTAController::class, 'show'])->name('cetak-kta');
+Route::get('pengajuan-kta', [PengajuanKTAController::class, 'show'])->name('pengajuan-kta');
 Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 
 // *Admin auth

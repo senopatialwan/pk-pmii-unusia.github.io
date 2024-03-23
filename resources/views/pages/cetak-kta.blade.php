@@ -4,10 +4,6 @@
 
 
 @section('content')
-
-
-    <!-- Start User Login
-        ============================================= -->
     <div class="login-area bg-gray">
         <div class="container">
             <div class="row">
@@ -26,25 +22,26 @@
                                 </div>
                                 <div class="col-md-6 content">
                                     <h4>Cetak Kartu Tanda Anggota</h4>
-                                    <form action="#">
+                                    <form action="{{ route('cetak-kta.store') }}" method="post" enctype="multipart/form-data">
+                                        @csrf
                                         <div class="col-lg-12 col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Nama Lengkap" type="text" />
+                                                    <input class="form-control" name="nama_lengkap" placeholder="Nama Lengkap" type="text" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Email" type="email" />
+                                                    <input class="form-control" name="email" placeholder="Email" type="email" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Nomor Induk Mahasiswa"
+                                                    <input class="form-control" name="nim" placeholder="Nomor Induk Mahasiswa"
                                                         type="text" />
                                                 </div>
                                             </div>
@@ -52,8 +49,12 @@
                                         <div class="col-lg-12 col-md-12">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Tahun Angkatan Mapaba"
-                                                        type="text" />
+                                                    <select class="form-control" name="angkatan_mapaba_id" required>
+                                                        <option value="" selected='selected' disabled>Pilih Angkatan Mapaba</option>
+                                                        @foreach ($angkatan_mapaba as $angkatan_mapaba)
+                                                            <option value="{{ $angkatan_mapaba->id }}">Angkatan {{ $angkatan_mapaba->tahun }}</option>
+                                                        @endforeach
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
