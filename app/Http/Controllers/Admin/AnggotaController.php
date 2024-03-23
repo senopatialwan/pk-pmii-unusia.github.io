@@ -10,11 +10,12 @@ use App\Models\ProgramStudi;
 use Illuminate\Http\Request;
 use App\Models\Fakultas;
 use App\Models\Rayon;
+use App\Traits\KtaId;
 use App\Traits\Upload;
 
 class AnggotaController extends Controller
 {
-    use Upload;
+    use Upload, KtaId;
     public function index()
     {
         $anggota = Anggota::where('status', 1)->get();
@@ -45,11 +46,16 @@ class AnggotaController extends Controller
         $foto = $this->UploadFile($request->file('foto'), '/anggota/' . $anggota->nim, 'foto');
         $cv = $this->UploadFile($request->file('cv'), '/anggota/' . $anggota->nim, 'cv');
         $ktm = $this->UploadFile($request->file('ktm'), '/anggota/' . $anggota->nim, 'ktm');
+
+        $data_kta = Anggota::pluck('kta_id');
+        $kta_id = $this->GenerateKtaId($data_kta);
+
         $anggota->update([
             'sertifikat_mapaba' => 'storage/' . $sertifikat_mapaba,
             'foto' => 'storage/' . $foto,
             'cv' => 'storage/' . $cv,
             'ktm' => 'storage/' . $ktm,
+            'kta_id' => $kta_id
         ]);
         return redirect()->back()->with([
             'message' => 'Anggota berhasil ditambahkan.',
@@ -76,7 +82,7 @@ class AnggotaController extends Controller
 
     public function verifikasiKTA()
     {
-        $anggota_verifikasi = Anggota::where('status', 0)->get();
+        $anggota_verifikasi = Anggota::get();
         $data = [
             'anggota_verifikasi' => $anggota_verifikasi
         ];
@@ -88,10 +94,27 @@ class AnggotaController extends Controller
         $anggota = Anggota::find($request->id);
         if($request->status)
         {
-            $anggota->update([
-                'status'=> $request->status
-            ]);
-        } else
+            if($request->status == 1)
+            {
+                $data_kta = Anggota::pluck('kta_id');
+                $kta_id = $this->GenerateKtaId($data_kta);
+                $anggota->update([
+                    'status'=> $request->status,
+                    'kta_id' => $kta_id
+                ]);
+            }
+
+            elseif ($request->status == 2)
+            {
+                $anggota->update([
+                    'status'=> $request->status,
+                    'kta_id' => null
+
+                ]);
+            }
+        }
+
+        else
         {
             $this->destroy($request->id);
         }

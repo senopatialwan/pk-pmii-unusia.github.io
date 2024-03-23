@@ -21,6 +21,7 @@ class Anggota extends Model
         "fakultas_id",
         "prodi_id",
         "angkatan_mapaba_id",
+        "kta_id",
         "nomor_telepon",
         "sertifikat_mapaba",
         "foto",

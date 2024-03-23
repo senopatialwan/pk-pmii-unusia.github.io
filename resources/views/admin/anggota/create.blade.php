@@ -68,6 +68,26 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
+                @error('alamat')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control" name="alamat" placeholder="Alamat Lengkap" type="text" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                @error('nomor_telepon')
+                    <div style="color: red">{{ $message }}</div>
+                @enderror
+                <div class="row">
+                    <div class="form-group">
+                        <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
                 @error('rayon_id')
                     <div style="color: red">{{ $message }}</div>
                 @enderror
@@ -113,16 +133,6 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12">
-                @error('alamat')
-                    <div style="color: red">{{ $message }}</div>
-                @enderror
-                <div class="row">
-                    <div class="form-group">
-                        <input class="form-control" name="alamat" placeholder="Alamat Lengkap" type="text" required/>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
                 @error('angkatan_mapaba_id')
                     <div style="color: red">{{ $message }}</div>
                 @enderror
@@ -134,16 +144,6 @@
                                 <option value="{{ $angkatan_mapaba->id }}">Angkatan {{ $angkatan_mapaba->tahun }}</option>
                             @endforeach
                         </select>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-                @error('nomor_telepon')
-                    <div style="color: red">{{ $message }}</div>
-                @enderror
-                <div class="row">
-                    <div class="form-group">
-                        <input class="form-control" name="nomor_telepon" placeholder="Nomor Telepon" type="number" required/>
                     </div>
                 </div>
             </div>
