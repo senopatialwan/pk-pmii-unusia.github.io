@@ -53,7 +53,7 @@
                                             <td>{{ $anggota->angkatan_mapaba->tahun }}</td>
                                             <td><span>{{ $anggota->status == 1 ? 'Diterima': ($anggota->status == 0 ? 'Belum ditentukan' : 'Ditolak') }}</span></td>
                                             <td>
-                                                <a href="{{route('admin.anggota.show')}}" class="btn btn-info">
+                                                <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn btn-info">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <form action="{{ route('admin.anggota.verifikasi-kta.handle') }}" method="POST" enctype="multipart/form-data"> @csrf <input type="hidden" name="id" value="{{ $anggota->id }}">

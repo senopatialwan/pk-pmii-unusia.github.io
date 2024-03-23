@@ -25,9 +25,9 @@ class AnggotaController extends Controller
         return view('admin.anggota.index', $data);
     }
 
-    public function show()
+    public function show(Anggota $anggota)
     {
-        return view('admin.anggota.show');
+        return view('admin.anggota.show', compact('anggota'));
     }
 
     public function create()

@@ -39,25 +39,24 @@
 									</tr>
 								</thead>
 								<tbody>
-                                {{-- TODO: Index anggota yang sudah diterima --}}
-                                @foreach ($anggota as $anggota)
-									<tr>
-										<td>{{ $anggota->nim }}</td>
-										<td>{{ $anggota->nama_lengkap }}</td>
-										<td>{{ $anggota->rayon->nama }}</td>
-										<td>{{ $anggota->fakultas->nama }}</td>
-										<td>{{ $anggota->prodi->nama }}</td>
-										<td>{{ $anggota->angkatan_mapaba->tahun }}</td>
-										<td>
-											<a href="{{route('admin.anggota.show')}}" class="btn border-none rounded-sm btn-info px-4 py-2">
-												<i class="fa fa-eye"></i> Lihat Lengkap </a>
-											<a href="{{route('admin.anggota.edit')}}" class="btn border-none rounded-sm px-4 py-2 btn-warning">
-												<i class="fa fa-edit"></i> Edit </a>
-											<a href="" class="btn border-none rounded-sm px-4 py-2 btn-danger">
-												<i class="fa fa-trash"></i> Hapus </a>
-										</td>
-									</tr>
-                                @endforeach
+                                    @foreach ($anggota as $anggota)
+                                        <tr>
+                                            <td>{{ $anggota->nim }}</td>
+                                            <td>{{ $anggota->nama_lengkap }}</td>
+                                            <td>{{ $anggota->rayon->nama }}</td>
+                                            <td>{{ $anggota->fakultas->nama }}</td>
+                                            <td>{{ $anggota->prodi->nama }}</td>
+                                            <td>{{ $anggota->angkatan_mapaba->tahun }}</td>
+                                            <td>
+                                                <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn border-none rounded-sm btn-info px-4 py-2">
+                                                    <i class="fa fa-eye"></i> Lihat Lengkap </a>
+                                                <a href="{{route('admin.anggota.edit')}}" class="btn border-none rounded-sm px-4 py-2 btn-warning">
+                                                    <i class="fa fa-edit"></i> Edit </a>
+                                                <a href="" class="btn border-none rounded-sm px-4 py-2 btn-danger">
+                                                    <i class="fa fa-trash"></i> Hapus </a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
 								</tbody>
 							</table>
 						</div>
