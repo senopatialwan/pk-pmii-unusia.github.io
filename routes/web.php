@@ -48,6 +48,7 @@ Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
 Route::get('cetak-kta', [CetakKTAController::class, 'show'])->name('cetak-kta');
+Route::get('cetak-kta/tes-kta', [CetakKTAController::class, 'tesKTA'])->name('id-cetak-kta');
 Route::get('pengajuan-kta', [PengajuanKTAController::class, 'show'])->name('pengajuan-kta');
 Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 

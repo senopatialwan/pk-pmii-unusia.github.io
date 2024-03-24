@@ -19,6 +19,16 @@ class CetakKTAController extends Controller
     public function store(Request $request)
     {
         $anggota = Anggota::where('nim', $request->nim)->first();
-        dd($anggota->kta_id);
+        return redirect()->route('id-cetak-kta', $anggota->kta_id);
+    }
+
+    public function tesKTA()
+    {
+        return view('pages.id-cetak-kta');
+    }
+    public function cetakKTA($anggota)
+    {
+        $anggota = Anggota::where('kta_id', $anggota)->first();
+        return view('pages.id-cetak-kta', compact('anggota'));
     }
 }
