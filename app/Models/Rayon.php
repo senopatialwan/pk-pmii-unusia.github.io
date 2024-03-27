@@ -10,11 +10,11 @@ class Rayon extends Model
 {
     use Sushi;
     protected $rows = [
-        ['id' => 1, 'nama'=> 'Pengurus Komisariat Unusia Bogor'],
-        ['id' => 2, 'nama'=> 'Pengurus Rayon FTIK Unusia Bogor'],
-        ['id' => 3, 'nama'=> 'Pengurus Rayon FKIP Unusia Bogor'],
-        ['id' => 4, 'nama'=> 'Pengurus Rayon Fajrul Falakh Unusia Bogor'],
-        ['id' => 5, 'nama'=> 'Pengurus Rayon Nusantara Unusia Bogor'],
-        ['id' => 6, 'nama'=> 'Pengurus Rayon FEB Unusia Bogor'],
+        ['id' => 1, 'slug'=> 'komisariat-unusia', 'nama'=> 'Pengurus Komisariat Unusia Bogor'],
+        ['id' => 2, 'slug'=> 'rayon-ftik', 'nama'=> 'Pengurus Rayon FTIK Unusia Bogor'],
+        ['id' => 3, 'slug'=> 'rayon-fkip', 'nama'=> 'Pengurus Rayon FKIP Unusia Bogor'],
+        ['id' => 4, 'slug'=> 'rayon-ff', 'nama'=> 'Pengurus Rayon Fajrul Falakh Unusia Bogor'],
+        ['id' => 5, 'slug'=> 'rayon-nusantara', 'nama'=> 'Pengurus Rayon Nusantara Unusia Bogor'],
+        ['id' => 6, 'slug'=> 'rayon-feb', 'nama'=> 'Pengurus Rayon FEB Unusia Bogor'],
     ];
 }

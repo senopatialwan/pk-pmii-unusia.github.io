@@ -35,8 +35,8 @@
                 <li class="<?php echo (Route::currentRouteName() == 'visi-misi') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('visi-misi') }}">Visi Misi</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
+                <li class="<?php echo (Route::currentRouteName() == 'anggota.index') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('anggota.index') }}">Anggota</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'produk-hukum') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>
@@ -52,7 +52,7 @@
                 </li>
             </ul>
         </div>
-        
+
         <!-- /.navbar-collapse -->
       </div>
     </nav>

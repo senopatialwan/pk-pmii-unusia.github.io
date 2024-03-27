@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
-use App\Http\Controllers\Admin\AnggotaController;
+use App\Http\Controllers\Admin\AnggotaController as AdminAnggota;
+use App\Http\Controllers\Pages\AnggotaController as Anggota;
 use App\Http\Controllers\Pages\PengajuanKTAController;
 use App\Http\Controllers\Admin\PengurusController;
 use App\Http\Controllers\Admin\CategoryController;
@@ -11,28 +12,26 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Pages\CetakKTAController;
 use App\Http\Controllers\Pages\PagesBlogController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
 
 Route::get('/blogs', [PagesBlogController::class, 'index'])->name('pages.blogs.index');
 Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.blogs.show');
 
 
-
 Route::post('upload-files', [FileController::class, 'store'])->name('upload');
 Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class, 'store'])->name('pengajuan-kta.upload');
 Route::post('v1/user/cetak-kta', [CetakKTAController::class, 'store'])->name('cetak-kta.store');
-Route::post('v1/admin/anggota/store', [AnggotaController::class, 'store'])->name('admin.anggota.store');
+Route::post('v1/admin/anggota/store', [AdminAnggota::class, 'store'])->name('admin.anggota.store');
+Route::post('v1/admin/verifikasi-kta', [AdminAnggota::class, 'handleVerifikasiKTA'])->name('admin.anggota.verifikasi-kta.handle');
 
-Route::post('v1/admin/verifikasi-kta', [AnggotaController::class, 'handleVerifikasiKTA'])->name('admin.anggota.verifikasi-kta.handle');
 
 // *Pages
 Route::view('/', 'pages.home')->name('home');
 Route::view('produk-hukum', 'pages.produk-hukum')->name('produk-hukum');
-Route::view('anggota', 'pages.anggota')->name('anggota');
+
+Route::group(['prefix' => 'anggota'], function () {
+    Route::get('/', [Anggota::class, 'index'])->name('anggota.index');
+    Route::get('{pengurus}', [Anggota::class, 'show'])->name('anggota.show');
+});
 Route::view('tim', 'pages.tim')->name('tim');
 Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
@@ -42,19 +41,23 @@ Route::get('cetak-kta/tes-kta', [CetakKTAController::class, 'tesKTA'])->name('id
 Route::get('pengajuan-kta', [PengajuanKTAController::class, 'show'])->name('pengajuan-kta');
 Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 
+
 // *Admin auth
 Route::view('masuk', 'auth.masuk')->name('masuk');
 Route::view('daftar', 'auth.daftar')->name('daftar');
 
+
 // *Admin
 Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
+
 // *anggota
-Route::get('admin/anggota', [AnggotaController::class, 'index'])->name('admin.anggota.index');
-Route::get('admin/anggota/tambah-anggota', [AnggotaController::class, 'create'])->name('admin.anggota.create');
-Route::get('admin/anggota/edit-anggota', [AnggotaController::class, 'edit'])->name('admin.anggota.edit');
-Route::get('admin/anggota/verifikasi-kta', [AnggotaController::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
-Route::get('admin/anggota/{anggota}', [AnggotaController::class, 'show'])->name('admin.anggota.show');
+Route::get('admin/anggota', [AdminAnggota::class, 'index'])->name('admin.anggota.index');
+Route::get('admin/anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
+Route::get('admin/anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
+Route::get('admin/anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
+Route::get('admin/anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
@@ -64,8 +67,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::put('/pengurus/{pengurus}', [PengurusController::class, 'update'])->name('admin.pengurus.update');
     Route::delete('/pengurus/{pengurus}', [PengurusController::class, 'destroy'])->name('admin.pengurus.destroy');
 });
-
-
 
 
 Route::group(['prefix' => 'admin'], function () {
@@ -78,8 +79,6 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-
-
 Route::prefix('admin')->group(function () {
     Route::get('/tags', [TagController::class, 'index'])->name('admin.tags.index');
     Route::get('/tags/create', [TagController::class, 'create'])->name('admin.tags.create');
@@ -88,9 +87,6 @@ Route::prefix('admin')->group(function () {
     Route::put('/tags/{tag}', [TagController::class, 'update'])->name('admin.tags.update');
     Route::delete('/tags/{tag}', [TagController::class, 'destroy'])->name('admin.tags.destroy');
 });
-
-
-
 
 
 Route::prefix('admin')->group(function () {
@@ -102,10 +98,5 @@ Route::prefix('admin')->group(function () {
     Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('admin.blogs.destroy');
     Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('admin.blogs.show');
 });
-Route::prefix('admin')->group(function () {
-    Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('admin.blogs.show');
-});
-
-
 
 
