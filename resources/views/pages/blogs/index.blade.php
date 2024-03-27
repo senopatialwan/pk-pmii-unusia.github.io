@@ -95,6 +95,10 @@
                             </div>
                         </div>
                     @endforeach
+                    <div class="pagination">
+                        {{ $blogs->links() }}
+                    </div>
+
                 </div>
                 <div class="col-lg-12 col-md-12 pagi-area">
                     <nav aria-label="navigation">
