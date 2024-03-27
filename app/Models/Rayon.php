@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Sushi\Sushi;
 
 class Rayon extends Model
@@ -17,4 +18,9 @@ class Rayon extends Model
         ['id' => 5, 'slug'=> 'rayon-nusantara', 'nama'=> 'Pengurus Rayon Nusantara Unusia Bogor'],
         ['id' => 6, 'slug'=> 'rayon-feb', 'nama'=> 'Pengurus Rayon FEB Unusia Bogor'],
     ];
+
+    public function anggota(): HasMany
+    {
+        return $this->hasMany(Anggota::class);
+    }
 }
