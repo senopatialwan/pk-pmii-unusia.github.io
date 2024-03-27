@@ -14,7 +14,7 @@
                                         <tr>
                                             <th>NIM</th>
                                             <th>Nama Lengkap</th>
-                                            <th>Prodi</th>
+                                            <th>Program Studi</th>
                                             <th>Angkatan Mapaba</th>
                                         </tr>
                                     </thead>

@@ -18,7 +18,7 @@ class AnggotaController extends Controller
     public function show($pengurus)
     {
         $pengurus = Rayon::where('slug', $pengurus)->first();
-        $anggota = Anggota::where('rayon_id', $pengurus->id)->get();
+        $anggota = Anggota::where('rayon_id', $pengurus->id)->get()->sortBy('angkatan_mapaba_id');
         return view('pages.anggota.show', compact('pengurus', 'anggota'));
     }
 }
