@@ -339,6 +339,11 @@
                                 <img src="assets/img/informasiKegiatan/ramadhan.jpeg" alt="Thumb" />
                             </a>
                         </div>
+                        <div class="item">
+                            <a class="item popup-link" href="assets/img/1500x700.png">
+                                <img src="assets/img/informasiKegiatan/santunan.jpeg" alt="Thumb" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -11,57 +11,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KTA | PMII UNUSIA BOGOR</title>
 <style>
-
 .output {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 80vh;
 }
 
 .ac-card {
-  display: grid;
-  grid-template-columns: 173px 1fr 50px;
-  background-color: #fff;
-  width: 412.5px;
-  height: 250px;
+  width: 676px;
+  height: 420px;
   margin-bottom: 1rem;
-  
-  border-radius: 10px;
+  border-radius: 32px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+  background-image: url('{{ asset('assets/img/pmii/kta-pmii.jpg') }}');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  position: relative;
 }
 
-.ac-icon {
-  width: 40px;
-  margin-top: 10px;
-}
 
 .ac-card-image {
-  height: 168px;
+  height: 162px;
   width: 131px;
-  margin: 10px 0 0 15px;
-  border: 3px solid #00056b;
+  margin: 135px 0 0 50px;
+  border: 3px solid #014182;
 }
 
 .ac-card-info {
-  font-size: 1.20rem;
+  font-size: 15px;
   margin: 0;
+  position: absolute;
+  left: 30%;
+  top: 29.5%;
+  right: 50%;
+  width: 450px;
 }
 
 .ac-card-info p {
-  margin-top: 10px;
+  margin: 10px;
   line-height: 1;
-  font-family: poppins;
-}
-
-.ac-card-footer {
-  display: grid;
-  align-content: center;
-  grid-column: 1/-1;
-  align-self: end;
-  height: 56.5px;
-  background-color: #00056b; 
+  font-family: Arial;
+  font-weight: 550;
+  color: black;
 }
 
 .ac-logo {
@@ -73,28 +66,47 @@
   opacity: 0;
   visibility: hidden;
 }
+
+.download-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+  }
+
+.download-btn:hover {
+    background-color: #45a049;
+  }
 </style>
 </head>
 <body>
   <main id="main" class="output">
-  <div class="ac-card">
-    <div class="ac-card-image">
-    <img src="assets/img/pmii/alwan.jpg" alt="Thumb">
+    <div class="ac-card">
+      <div class="ac-card-image">
+      <img src="{{ asset('assets/images/pmii/alwan.jpg') }}" alt="Thumb">
+      </div>
+      <div class="ac-card-info">
+        <p id="name"><strong>MUHAMAD ALWAN ABDURRAHMAN</strong></p>
+        <p id="studentNumber" style= "color: #014182">2025005</p>
+        <p id="pengurus">PENGURUS KOMISARIAT PMII UNUSIA BOGOR</p>
+        <p id="fakultas">FTIK - Sistem Informasi</p>
+        <p id="domisili">Domisili - Bogor</p>
+        <p id="angkatanMapaba">Angkatan Mapaba - 2020</p>
+        <p id="email" style= "color: #014182">alwanabdurrahman021@gmail.com</p>
+      </div>
     </div>
-    <div class="ac-card-info">
-      <p><strong id="name">Muhamad Alwan Abdurrahman</strong></p>
-      <p id="studentNumber">2025005</p>
-      <p id="pengurus">PK PMII UNUSIA BOGOR</p>
-      <p id="fakultas">FTIK - Sistem Informasi</p>
-      <p id="domisili">Domisili - Bogor</p>
-      <p id="angkatanMapaba">Angkatan Mapaba - 2020</p>
-    </div>
-    <img class="ac-icon" src="assets/img/pmii/logo-pmii.png">
-    <div class="ac-card-footer">
-      <img class="ac-logo" src="assets/img/pmii/logo-pmii.png">
-    </div>
-  </div>
-    </main>
+  </main>
+  <button class="download-btn">Download PDF</button>
 </body>
 </html>
 
