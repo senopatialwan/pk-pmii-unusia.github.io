@@ -2,6 +2,7 @@
 @section('title', 'Pengurus Komisariat | PMII UNUSIA BOGOR')
 
 @section('content')
+
     <!-- Start Team Area
     ============================================= -->
     <div id="team" class="team-area radius-less default-padding bottom-less">
@@ -9,7 +10,9 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2> PENGURUS KOMISARIAT PMII UNUSIA BOGOR <br /> Masa Khidmat 2024-2025 </h2>
+                        <h2> PENGURUS KOMISARIAT PMII UNUSIA BOGOR <br /> Masa Khidmat 2024-2025 </h2><br/>
+                        <a class="ms-5 btn btn-primary p-3" href="{{ route('tim') }}">KOMISARIAT UNUSIA</a>
+                        <a class="btn btn-primary p-3" href="{{ route('tim-kopri') }}">KOPRI UNUSIA </a>
                     </div>
                 </div>
             </div>
@@ -719,7 +722,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2> KOPRI PMII UNUSIA BOGOR <br /> Masa Khidmat 2024-2025 </h2>
+                        <h2> BIRO-BIRO</h2>
                     </div>
                 </div>
             </div>
@@ -729,7 +732,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -754,8 +757,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -767,7 +770,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -792,8 +795,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -805,7 +808,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -830,8 +833,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -843,7 +846,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -868,8 +871,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -881,7 +884,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -906,8 +909,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -919,7 +922,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
@@ -944,8 +947,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>Tasya</h4>
-                                <span>Ketua Kopri</span>
+                                <h4>M Alwan Abdurrahman</h4>
+                                <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>

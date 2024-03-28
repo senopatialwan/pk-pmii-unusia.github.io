@@ -44,8 +44,8 @@
                 <li class="<?php echo (Route::currentRouteName() == 'tim') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
-                    <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
+                <li class="{{ (Route::currentRouteName() == 'blog') ? 'active' : '' }}">
+                    <a class="smooth-menu {{ (Route::currentRouteName() == 'blogs') ? 'active' : '' }}" href="{{ route('pages.blogs.index') }}">Berita</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'cetak-kta') ? 'active' : ''; ?>">
                   <a class="smooth-menu" href="{{route('cetak-kta') }}">Cetak KTA</a>
