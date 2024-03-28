@@ -60,7 +60,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <img src="assets/img/tim/aang.jpg" alt="Thumb" />
                                 <ul>
                                     <li class="facebook">
                                         <a href="#">
