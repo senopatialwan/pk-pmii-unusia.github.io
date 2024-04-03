@@ -11,7 +11,7 @@
                         <div class="login-box">
                             <div class="login-content">
                                 <div class="col-md-6 info">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img src="assets/img/pmii/logo-web.png" style="width: 15em" alt="Login" />
                                     </a>
                                     <h2>Salam Pergerakan!</h2>
