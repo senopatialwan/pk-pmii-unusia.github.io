@@ -12,6 +12,9 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Pages\CetakKTAController;
 use App\Http\Controllers\Pages\PagesBlogController;
 
+Route::fallback(function () {
+    return view("error.404");
+});
 
 Route::get('/blogs', [PagesBlogController::class, 'index'])->name('pages.blogs.index');
 Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.blogs.show');
