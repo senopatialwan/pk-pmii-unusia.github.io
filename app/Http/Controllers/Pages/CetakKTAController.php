@@ -24,16 +24,16 @@ class CetakKTAController extends Controller
             ->where('nim', $request->nim)
             ->where('angkatan_mapaba_id', $request->angkatan_mapaba_id)
             ->first();
-        return redirect()->route('id-cetak-kta', $anggota->kta_id);
+        return redirect()->route('cetak-kta.print', $anggota->kta_id);
     }
 
     public function tesKTA()
     {
         return view('pages.id-cetak-kta');
     }
-    public function cetakKTA($anggota)
+    public function cetakKTA($kta_id)
     {
-        $anggota = Anggota::where('kta_id', $anggota)->first();
+        $anggota = Anggota::where('kta_id', $kta_id)->first();
         return view('pages.id-cetak-kta', compact('anggota'));
     }
 }

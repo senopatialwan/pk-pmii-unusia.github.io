@@ -22,7 +22,7 @@ class CetakKTARequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nama_lengkap' => 'required|exists:anggota,email',
+            'nama_lengkap' => 'required|exists:anggota,nama_lengkap',
             'email' => 'required|exists:anggota,email',
             'nim' => 'required|integer|exists:anggota,nim',
             'angkatan_mapaba_id' => 'required',

@@ -35,13 +35,14 @@ Route::group(['prefix' => 'anggota'], function () {
     Route::get('/', [Anggota::class, 'index'])->name('anggota.index');
     Route::get('{pengurus}', [Anggota::class, 'show'])->name('anggota.show');
 });
+
 Route::view('tim', 'pages.tim')->name('tim');
 Route::view('tim-kopri', 'pages.tim-kopri')->name('tim-kopri');
 Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
 Route::get('cetak-kta', [CetakKTAController::class, 'show'])->name('cetak-kta');
-Route::get('cetak-kta/tes-kta', [CetakKTAController::class, 'tesKTA'])->name('id-cetak-kta');
+Route::get('cetak-kta/{kta_id}', [CetakKTAController::class, 'cetakKTA'])->name('cetak-kta.print');
 Route::get('pengajuan-kta', [PengajuanKTAController::class, 'show'])->name('pengajuan-kta');
 Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 
