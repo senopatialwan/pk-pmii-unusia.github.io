@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Pages\CetakKTARequest;
 use App\Models\Anggota;
 use Illuminate\Http\Request;
 use App\Models\AngkatanMapaba;
@@ -16,9 +17,13 @@ class CetakKTAController extends Controller
         return view("pages.cetak-kta", compact('angkatan_mapaba'));
     }
 
-    public function store(Request $request)
+    public function store(CetakKTARequest $request)
     {
-        $anggota = Anggota::where('nim', $request->nim)->first();
+        $anggota = Anggota::where('nama_lengkap', $request->nama_lengkap)
+            ->where('email', $request->email)
+            ->where('nim', $request->nim)
+            ->where('angkatan_mapaba_id', $request->angkatan_mapaba_id)
+            ->first();
         return redirect()->route('id-cetak-kta', $anggota->kta_id);
     }
 
