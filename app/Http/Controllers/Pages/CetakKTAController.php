@@ -22,9 +22,19 @@ class CetakKTAController extends Controller
         $anggota = Anggota::where('nama_lengkap', $request->nama_lengkap)
             ->where('email', $request->email)
             ->where('nim', $request->nim)
-            ->where('angkatan_mapaba_id', $request->angkatan_mapaba_id)
             ->first();
-        return redirect()->route('cetak-kta.print', $anggota->kta_id);
+
+        if($anggota->status == 1)
+        {
+            return redirect()->route('cetak-kta.print', $anggota->kta_id);
+        }
+        else
+        {
+            return redirect()->back()->with([
+                'message' => 'Masih dalam tahap pengajuan.',
+                'alert-type' => 'danger',
+            ]);
+        }
     }
 
     public function tesKTA()

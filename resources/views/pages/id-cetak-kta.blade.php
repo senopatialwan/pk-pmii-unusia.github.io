@@ -86,7 +86,7 @@
 <main id="main" class="output">
     <div class="ac-card">
         <div class="ac-card-image">
-            <img src="{{ asset('assets/images/pmii/alwan.jpg') }}" alt="Thumb">
+            <img src="{{ asset($anggota->foto) }}" alt="Photo">
         </div>
         <div class="ac-card-info">
             <p id="name">

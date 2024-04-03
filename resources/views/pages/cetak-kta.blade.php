@@ -21,6 +21,11 @@
                                 </div>
                                 <div class="col-md-6 content">
                                     <h4>Cetak Kartu Tanda Anggota</h4>
+                                    @if(session('message'))
+                                        <div class="mg-t-20 alert alert-{{ session('alert-type') }} tx-semibold">
+                                            {{ session('message') }}
+                                        </div>
+                                    @endif
                                     <form action="{{ route('cetak-kta.store') }}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="col-lg-12 col-md-12">
