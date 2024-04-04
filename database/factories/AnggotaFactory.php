@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Traits\KtaId;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Anggota;
 /**
@@ -9,6 +10,7 @@ use App\Models\Anggota;
  */
 class AnggotaFactory extends Factory
 {
+    use KtaId;
     /**
      * Define the model's default state.
      *
@@ -17,6 +19,7 @@ class AnggotaFactory extends Factory
     protected $model = Anggota::class;
     public function definition(): array
     {
+        $data_kta = Anggota::pluck('kta_id');
         return [
             'id' => $this->faker->uuid(),
             'nama_lengkap' => $this->faker->name(),
@@ -28,7 +31,7 @@ class AnggotaFactory extends Factory
             'fakultas_id' => rand(1, 6),
             'prodi_id' => rand(1, 14),
             'angkatan_mapaba_id' => rand(1, 14),
-            'kta_id' => null,
+            'kta_id' => $this->GenerateKtaId($data_kta),
             'sertifikat_mapaba' => null,
             'foto' => null,
             'cv' => null,
