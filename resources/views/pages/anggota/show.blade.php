@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row mg-50">
                 <div class="col-md-8 col-md-offset-2">
-                <div class="site-heading text-center">
+                <div class="site-heading text-center" style= "margin-top: 50px; margin-bottom: -10px">
                     <h2>{{ $pengurus->nama }}</h2>
                 </div>
                     <div class="login-items">

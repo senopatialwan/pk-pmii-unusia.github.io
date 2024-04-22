@@ -17,7 +17,7 @@
                                 @foreach ($rayon as $item)
                                     <div class="single-item">
                                         <a href="{{ route('anggota.show', $item->slug) }}">
-                                            <img src="assets/img/pmii/{{ $item->id }}.png" style="width: 8em " alt="{{ $item->nama }}" />
+                                            <img src="assets/img/pmii/{{ $item->id }}.png" style="width: 1" alt="{{ $item->nama }}" />
                                         </a>
                                     </div>
                                 @endforeach

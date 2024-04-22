@@ -191,7 +191,7 @@
                             @enderror
                             <div class="row">
                                 <div class="form-group">
-                                    <i>Foto Formal Memakai Atribut PMII <b>JPG, JPEG, PNG</b></i>
+                                    <i>Foto Formal Memakai Atribut PMII (500x600 pixel) <b>JPG, JPEG, PNG</b></i>
                                     <input class="form-control" name="foto" placeholder="Foto" type="file" accept="image/png, image/jpeg, image/jpg" required />
                                 </div>
                             </div>

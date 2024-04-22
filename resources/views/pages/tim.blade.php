@@ -313,7 +313,7 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
+                                <h4>Iqbal Ludy Abdullah</h4>
                                 <span>Sekretaris Wakil Ketua 2</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
@@ -351,7 +351,7 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
+                                <h4>Ilham Nazarudin Maulana</h4>
                                 <span>Sekretaris Wakil Ketua 3</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
@@ -359,12 +359,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="team-items text-center">
-                <!-- Single Item -->
+                    <!-- End Single Item --><!-- Single Item -->
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
@@ -393,316 +388,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 1</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 2</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-                <div class="team-items text-center">
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 1</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 2</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-                <div class="team-items text-center">
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 1</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 2</span>
-                                <h5>
-                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="instagram">
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Muhamad Ruslan</h4>
+                                <span>Wakil Bendahara Umum</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -757,8 +444,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Adisyah Dillah Cahyatullah</h4>
+                                <span>Koordinator Biro Kaderisasi</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -795,8 +482,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Luthfi Abd El Syakur</h4>
+                                <span>Anggota Biro Kaderisasi</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -833,8 +520,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Wahyu Juli Karnaen</h4>
+                                <span>Koordinator Biro Hubungan Alumni & Kampus</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -871,8 +558,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Robi Nur Hidayah</h4>
+                                <span>Anggota Biro Hubungan Alumni & Kampus</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -909,8 +596,8 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Yudha Darmansyah</h4>
+                                <span>Koordinator Biro Pengembangan Intelektual</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
@@ -947,8 +634,315 @@
                                 </ul>
                             </div>
                             <div class="info">
-                                <h4>M Alwan Abdurrahman</h4>
-                                <span>Sekretaris Wakil Ketua 3</span>
+                                <h4>Afdal Alif</h4>
+                                <span>Biro Pengembangan Intelektual</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div><div class="container">
+            <div class="row">
+                <div class="team-items text-center">
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Raihan Gilang Siliwangi</h4>
+                                <span>Anggota Biro Pengembangan Intelektual</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>M. Maulana Syahravi</h4>
+                                <span>Anggota Biro Pengembangan Intelektual</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Rendi</h4>
+                                <span>Koordinator Biro Media Massa</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Muhamad Hasyimi Hadromi</h4>
+                                <span>Anggota Biro Media Massa</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Ali Sodiqin</h4>
+                                <span>Koordinator Biro Dakwan dan Kajian Islam</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Saripudin</h4>
+                                <span>Anggota Biro Dakwan dan Kajian Islam</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item --><!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/man.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>M Sirojudin Abas</h4>
+                                <span>Anggota Biro Dakwan dan Kajian Islam</span>
+                                <h5>
+                                    <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item --><!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/tim/woman.jpg" alt="Thumb" />
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info">
+                                <h4>Erika Qotrun Nada</h4>
+                                <span>Anggota Biro Dakwan dan Kajian Islam</span>
                                 <h5>
                                     <i class="fas fa-envelope"></i> alwanabdurrahman021@gmail.com
                                 </h5>
