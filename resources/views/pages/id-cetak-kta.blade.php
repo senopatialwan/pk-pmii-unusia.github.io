@@ -26,7 +26,7 @@
 
         .ac-card-image {
             height: 162px;
-            width: 131px;
+            width: 136px;
             margin: 135px 0 0 50px;
             border: 3px solid #014182;
         }
