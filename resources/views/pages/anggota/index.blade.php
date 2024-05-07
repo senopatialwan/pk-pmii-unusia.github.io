@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 info">
                 <h2> ANGGOTA KOMISARIAT & RAYON <br /> PMII UNUSIA KABUPATEN BOGOR </h2>
-                <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki <b>1 Kepengurusan Komisariat</b> beserta <b>KOPRI Komisariat</b> & Memiliki <b>5 Rayon Aktif</b> beserta <b>KOPRI Rayon</b> dengan Total Anggota Sebanyak .... </p>
+                <p> Pergerakan Mahasiswa Islam Indonesia Komisariat Universitas Nahdlatul Ulama Indonesia Cabang Kabupaten Bogor Memiliki <b>1 Kepengurusan Komisariat</b> beserta <b>KOPRI Komisariat</b> & Memiliki <b>5 Rayon Aktif</b> beserta <b>KOPRI Rayon</b> </p>
                 <div class="fun-facts">
                     <h3>KELUARGA BESAR KAMI</h3>
                     <div class="row">

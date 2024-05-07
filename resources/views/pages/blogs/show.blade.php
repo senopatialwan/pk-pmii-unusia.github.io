@@ -10,7 +10,7 @@
           <div class="col-lg-12 col-md-12">
             <h1>Detail Berita</h1>
             <ul class="breadcrumb">
-              <li><a href="#">Beranda</a></li>
+              <li><a href="/">Beranda</a></li>
               <li><a href="#">Berita</a></li>
               <li class="active">Detail Berita</li>
             </ul>
