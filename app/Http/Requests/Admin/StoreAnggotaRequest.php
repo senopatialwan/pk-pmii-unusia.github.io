@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Pages;
+namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PengajuanKTARequest extends FormRequest
+class StoreAnggotaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

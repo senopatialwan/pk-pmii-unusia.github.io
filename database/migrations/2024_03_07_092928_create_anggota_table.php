@@ -16,12 +16,13 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('email');
             $table->string('nim');
-            $table->string('rayon');
-            $table->string('fakultas');
-            $table->string('prodi');
             $table->string('alamat');
-            $table->string('angkatan_mapaba');
             $table->string('nomor_telepon');
+            $table->unsignedBigInteger('rayon_id');
+            $table->unsignedBigInteger('fakultas_id');
+            $table->unsignedBigInteger('prodi_id');
+            $table->unsignedBigInteger('angkatan_mapaba_id');
+            $table->unsignedBigInteger('kta_id')->nullable();
             $table->string('sertifikat_mapaba')->nullable();
             $table->string('foto')->nullable();
             $table->string('cv')->nullable();

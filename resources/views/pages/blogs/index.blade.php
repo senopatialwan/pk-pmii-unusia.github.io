@@ -1,5 +1,5 @@
 @extends('layouts.pages')
-@section('title', 'Pengurus Komisariat')
+@section('title', 'Berita | PMII UNUSIA BOGOR')
 
 @section('content')
     <!-- Start Breadcrumb -->
@@ -95,6 +95,10 @@
                             </div>
                         </div>
                     @endforeach
+                    <div class="pagination">
+                        {{ $blogs->links() }}
+                    </div>
+
                 </div>
                 <div class="col-lg-12 col-md-12 pagi-area">
                     <nav aria-label="navigation">

@@ -11,10 +11,11 @@
     <link href="{{ url(asset('assets/css/bootsnav.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/style-pages.css')) }}" rel="stylesheet" />
     <link href="{{ url(asset('assets/css/responsive-pages.css')) }}" rel="stylesheet" />
-    
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
+    @yield('extra-head')
 @endsection
 
 @section('body')
@@ -26,7 +27,7 @@
     @include('partials.pages-header ')
 
     @yield('content')
-    
+
     @include('partials.pages-footer')
 
     @isset($slot)
@@ -46,5 +47,5 @@
     <script src="{{ url(asset('assets/js/wow.min.js')) }}"></script>
     <script src="{{ url(asset('assets/js/bootsnav.js')) }}"></script>
     <script src="{{ url(asset('assets/js/main.js')) }}"></script>
-    
+
 @endsection

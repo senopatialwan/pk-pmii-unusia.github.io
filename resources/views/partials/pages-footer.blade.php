@@ -28,11 +28,11 @@
                             <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
                                 <a class="smooth-menu" href="/">Beranda</a>
                             </li>
-                            <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
-                                <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'visi-misi') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('visi-misi') }}">Visi Misi</a>
                             </li>
-                            <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
-                                <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
+                            <li class="<?php echo (Route::currentRouteName() == 'anggota.index') ? 'active' : ''; ?>">
+                                <a class="smooth-menu" href="{{ route('anggota.index') }}">Anggota</a>
                             </li>
                             <li class="<?php echo (Route::currentRouteName() == 'produk-hukum') ? 'active' : ''; ?>">
                                 <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>
@@ -41,7 +41,7 @@
                                 <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                             </li>
                             <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>">
-                                <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('blog') }}">Berita</a>
+                                <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blog') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
                             </li>
                         </ul>
                     </div>
@@ -118,13 +118,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-5 text-right social">
                         <ul>
                             <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://www.tiktok.com/@pk.pmii.unusia.ka?_t=8kmMsBB2Y78&_r=1">
-                                    <i class="fab fa-twitter"></i>
+                                    <img src="{{asset('assets/img/pmii/tik-tok.png')}}" alt="Logo" style="width: 1.1em" />
                                 </a>
                             </li>
                             <li>

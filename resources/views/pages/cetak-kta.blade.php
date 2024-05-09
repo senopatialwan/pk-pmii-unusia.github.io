@@ -1,13 +1,8 @@
 @extends('layouts.pages')
-@section('title', 'CETAK KTA | PMII UNUSIA BOGOR')
 
-
+@section('title', 'Cetak KTA')
 
 @section('content')
-
-
-    <!-- Start User Login
-        ============================================= -->
     <div class="login-area bg-gray">
         <div class="container">
             <div class="row">
@@ -16,7 +11,7 @@
                         <div class="login-box">
                             <div class="login-content">
                                 <div class="col-md-6 info">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img src="assets/img/pmii/logo-web.png" style="width: 15em" alt="Login" />
                                     </a>
                                     <h2>Salam Pergerakan!</h2>
@@ -26,34 +21,56 @@
                                 </div>
                                 <div class="col-md-6 content">
                                     <h4>Cetak Kartu Tanda Anggota</h4>
-                                    <form action="#">
+                                    @if(session('message'))
+                                        <div class="mg-t-20 alert alert-{{ session('alert-type') }} tx-semibold">
+                                            {{ session('message') }}
+                                        </div>
+                                    @endif
+                                    <form action="{{ route('cetak-kta.store') }}" method="post" enctype="multipart/form-data">
+                                        @csrf
                                         <div class="col-lg-12 col-md-12">
+                                            @error('nama_lengkap')
+                                                <div style="color: red">{{ $message }}</div>
+                                            @enderror
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Nama Lengkap" type="text" />
+                                                    <input class="form-control" name="nama_lengkap" placeholder="Nama Lengkap" type="text" required/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
+                                            @error('email')
+                                                <div style="color: red">{{ $message }}</div>
+                                            @enderror
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Email" type="email" />
+                                                    <input class="form-control" name="email" placeholder="Email" type="email" required/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
+                                            @error('nim')
+                                                <div style="color: red">{{ $message }}</div>
+                                            @enderror
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Nomor Induk Mahasiswa"
-                                                        type="text" />
+                                                    <input class="form-control" name="nim" placeholder="Nomor Induk Mahasiswa"
+                                                        type="text" required/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12">
+                                            @error('angkatan_mapaba_id')
+                                                <div style="color: red">{{ $message }}</div>
+                                            @enderror
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <input class="form-control" placeholder="Tahun Angkatan Mapaba"
-                                                        type="text" />
+                                                    <select class="form-control" name="angkatan_mapaba_id" required>
+                                                        <option value="" selected='selected' disabled>Pilih Angkatan Mapaba</option>
+                                                        @foreach ($angkatan_mapaba as $angkatan_mapaba)
+                                                            <option value="{{ $angkatan_mapaba->id }}">Angkatan {{ $angkatan_mapaba->tahun }}</option>
+                                                        @endforeach
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>

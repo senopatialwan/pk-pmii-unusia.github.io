@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pengurus;
-use App\Http\Requests\PengurusRequest;
+use App\Http\Requests\Admin\PengurusRequest;
 
 class PengurusController extends Controller
 {

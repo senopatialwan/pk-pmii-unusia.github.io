@@ -47,13 +47,13 @@
                                         <tr>
                                             <td>{{ $anggota->nim }}</td>
                                             <td>{{ $anggota->nama_lengkap }}</td>
-                                            <td>{{ $anggota->rayon }}</td>
-                                            <td>{{ $anggota->fakultas }}</td>
-                                            <td>{{ $anggota->prodi }}</td>
-                                            <td>{{ $anggota->angkatan_mapaba }}</td>
+                                            <td>{{ $anggota->rayon->nama }}</td>
+                                            <td>{{ $anggota->fakultas->nama }}</td>
+                                            <td>{{ $anggota->prodi->nama }}</td>
+                                            <td>{{ $anggota->angkatan_mapaba->tahun }}</td>
                                             <td><span>{{ $anggota->status == 1 ? 'Diterima': ($anggota->status == 0 ? 'Belum ditentukan' : 'Ditolak') }}</span></td>
                                             <td>
-                                                <a href="{{route('admin.anggota.show')}}" class="btn btn-info">
+                                                <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn btn-info">
                                                     <i class="fa fa-eye"></i>
                                                 </a>
                                                 <form action="{{ route('admin.anggota.verifikasi-kta.handle') }}" method="POST" enctype="multipart/form-data"> @csrf <input type="hidden" name="id" value="{{ $anggota->id }}">

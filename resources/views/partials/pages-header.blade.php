@@ -4,15 +4,15 @@
     <!-- Start Navigation -->
     <nav class="navbar navbar-default navbar-sticky bootsnav on no-full">
       <div class="container">
-        <!-- Start Atribute Navigation -->
-        <div class="attr-nav button">
+        {{-- <!-- Start Atribute Navigation -->
+        <div class="attr-nav button" >
           <ul>
             <li>
               <a href="{{route('cetak-kta') }}">Cetak KTA</a>
             </li>
           </ul>
         </div>
-        <!-- End Atribute Navigation -->
+        <!-- End Atribute Navigation -->  --}}
 
         <!-- Start Header Navigation -->
         <div class="navbar-header">
@@ -32,11 +32,11 @@
                 <li class="<?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'active' : ''; ?>">
                     <a href="/" class="smooth-menu">Beranda</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'tentang') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('tentang') }}">Tentang</a>
+                <li class="<?php echo (Route::currentRouteName() == 'visi-misi') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('visi-misi') }}">Visi Misi</a>
                 </li>
-                <li class="<?php echo (Route::currentRouteName() == 'anggota') ? 'active' : ''; ?>">
-                    <a class="smooth-menu" href="{{ route('anggota') }}">Anggota</a>
+                <li class="<?php echo (Route::currentRouteName() == 'anggota.index') ? 'active' : ''; ?>">
+                    <a class="smooth-menu" href="{{ route('anggota.index') }}">Anggota</a>
                 </li>
                 <li class="<?php echo (Route::currentRouteName() == 'produk-hukum') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('produk-hukum') }}">Produk Hukum</a>
@@ -44,12 +44,20 @@
                 <li class="<?php echo (Route::currentRouteName() == 'tim') ? 'active' : ''; ?>">
                     <a class="smooth-menu" href="{{ route('tim') }}">Pengurus Komisariat</a>
                 </li>
+<<<<<<< HEAD
                 <li class="dropdown dropdown-right <?php echo (Route::currentRouteName() == 'blogs') ? 'active' : ''; ?>">
                     <a class="smooth-menu <?php echo (Route::currentRouteName() == 'blogs') ? 'active' : ''; ?>" href="{{ route('pages.blogs.index') }}">Berita</a>
+=======
+                <li class="{{ (Route::currentRouteName() == 'blog') ? 'active' : '' }}">
+                    <a class="smooth-menu {{ (Route::currentRouteName() == 'blogs') ? 'active' : '' }}" href="{{ route('pages.blogs.index') }}">Berita</a>
+                </li>
+                <li class="<?php echo (Route::currentRouteName() == 'cetak-kta') ? 'active' : ''; ?>">
+                  <a class="smooth-menu" href="{{route('cetak-kta') }}">Cetak KTA</a>
+>>>>>>> main
                 </li>
             </ul>
         </div>
-        
+
         <!-- /.navbar-collapse -->
       </div>
     </nav>
