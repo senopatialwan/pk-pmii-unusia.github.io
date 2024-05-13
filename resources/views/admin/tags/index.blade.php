@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Data Pengurus Komisariat')
+@section('title', 'Data Tags')
 @section('content')
 <div class="container">
     <div class="row">
@@ -45,6 +45,4 @@
         </div>
     </div>
 </div>
-
-
 @endsection

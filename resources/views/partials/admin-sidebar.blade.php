@@ -6,12 +6,12 @@
         <div class="profile-info row">
             <div class="profile-image col-md-4 col-sm-4 col-xs-4">
                 <a href="#">
-                    <img src="{{ url(asset('assets/images/pmii/alwan-2.jpeg')) }}" class="img-responsive img-circle" />
+                    <img src="{{ Auth::user()->avatar }}" class="img-responsive img-circle" />
                 </a>
             </div>
             <div class="profile-details col-md-8 col-sm-8 col-xs-8">
                 <h3>
-                    <a href="#">M Alwan Abdr</a>
+                    <a href="#">{{ Auth::user()->name }}</a>
                     <!-- Available statuses: online, idle, busy, away and offline -->
                     <span class="profile-status online"></span>
                 </h3>
@@ -45,21 +45,6 @@
                     <li>
                         <a class="" href="{{ route('admin.tags.index') }}">Tags</a>
                     </li>                    
-                </ul>
-            </li>
-            <li class="">
-                <a href="javascript:;">
-                    <i class="fa fa-upload"></i>
-                    <span class="title">Media</span>
-                    <span class="arrow"></span>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a class="" href="blo-media.html">All Media</a>
-                    </li>
-                    <li>
-                        <a class="" href="blo-upload.html">Upload</a>
-                    </li>
                 </ul>
             </li>
             <li class="">
@@ -105,14 +90,12 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a class="" href="blo-users.html">Admin</a>
+                        <a class="" href="{{route('admin.users.index')}}">Admin</a>
                     </li>
                     <li>
-                        <a class="" href="blo-user-add.html">Tambah Admin</a>
+                        <a class="" href="{{route('admin.users.create')}}">Tambah Admin</a>
                     </li>
-                    <li>
-                        <a class="" href="blo-user-edit.html">Edit Admin</a>
-                    </li>
+                 
                 </ul>
             </li>
         </ul>

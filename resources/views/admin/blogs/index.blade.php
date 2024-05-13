@@ -6,13 +6,19 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Blogs</div>
+                    <div class="card-header">@yield('title')</div>
 
                     <div class="card-body">
+                        <!-- Search Bar -->
                         @if ($blogs->isEmpty())
                             <p>No blogs found.</p>
                         @else
                             <table class="table">
+                                <form action="{{ route('admin.blogs.index') }}" method="GET" class="d-flex">
+                                    <div class="form-group flex-grow-1 mr-2">
+                                        <input type="text" name="search" class="form-control" placeholder="Search...">
+                                    </div>
+                                </form>
                                 <thead>
                                     <tr>
                                         <th>ID</th>
@@ -38,12 +44,14 @@
                                             <td>
                                                 <a href="{{ route('admin.blogs.edit', $blog->id) }}"
                                                     class="btn btn-sm btn-primary">Edit</a>
-                                                <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST"
-                                                    style="display: inline">
+                                                <a href="#" onclick="deleteData({{ $blog->id }})" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-trash mr-1"></i>
+                                                    Delete
+                                                </a>
+                                                <form id="delete-form-{{ $blog->id }}"
+                                                    action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" style="display:none;">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-sm btn-danger"
-                                                        onclick="return confirm('Are you sure you want to delete?')">Delete</button>
                                                 </form>
                                                 <a href="{{ route('admin.blogs.show', $blog->id) }}" class="btn btn-sm btn-info">Detail</a>
                                             </td>

@@ -11,18 +11,15 @@ use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Pages\CetakKTAController;
 use App\Http\Controllers\Pages\PagesBlogController;
-
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\DashboardController;
 Route::fallback(function () {
     return view("error.404");
 });
 
 Route::get('/blogs', [PagesBlogController::class, 'index'])->name('pages.blogs.index');
 Route::get('/blogs/{title}', [PagesBlogController::class, 'show'])->name('pages.blogs.show');
-<<<<<<< HEAD
-
-=======
->>>>>>> main
-
 
 Route::post('upload-files', [FileController::class, 'store'])->name('upload');
 Route::post('v1/user/pengajuan-kta', [PengajuanKTAController::class, 'store'])->name('pengajuan-kta.upload');
@@ -57,18 +54,35 @@ Route::view('daftar', 'auth.daftar')->name('daftar');
 
 
 // *Admin
-Route::view('admin/dashboard', 'admin.dashboard')->name('admin.dashboard');
 
 
-// *anggota
-Route::get('admin/anggota', [AdminAnggota::class, 'index'])->name('admin.anggota.index');
-Route::get('admin/anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
-Route::get('admin/anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
-Route::get('admin/anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
-Route::get('admin/anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::get('admin/dashboard', DashboardController::class)->name('admin.dashboard');
+});
 
 
-Route::group(['prefix' => 'admin'], function () {
+
+
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
+    // *anggota
+    Route::get('admin/anggota', [AdminAnggota::class, 'index'])->name('admin.anggota.index');
+    Route::get('admin/anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
+    Route::get('admin/anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
+    Route::get('admin/anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
+    Route::get('admin/anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
+});
+
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::get('admin/profile', [ProfileController::class, 'index'])->name('admin.profile.index');
+    Route::put('admin/profile/{user}', [ProfileController::class, 'updateProfile'])->name('admin.profile.update');
+    Route::put('admin/profile/password/{user}', [ProfileController::class,'updatePassword'])->name('admin.profile.password');
+});
+
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('/pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
     Route::get('/pengurus/create', [PengurusController::class, 'create'])->name('admin.pengurus.create');
     Route::post('/pengurus', [PengurusController::class, 'store'])->name('admin.pengurus.store');
@@ -77,8 +91,18 @@ Route::group(['prefix' => 'admin'], function () {
     Route::delete('/pengurus/{pengurus}', [PengurusController::class, 'destroy'])->name('admin.pengurus.destroy');
 });
 
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
+    Route::get('/users', [UserController::class, 'index'])->name('admin.users.index');
+    Route::get('/users/create', [UserController::class, 'create'])->name('admin.users.create');
+    Route::post('/users', [UserController::class, 'store'])->name('admin.users.store');
+    Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('admin.users.edit');
+    Route::put('/users/{user}', [UserController::class, 'update'])->name('admin.users.update');
+    Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.users.destroy');
+});
 
-Route::group(['prefix' => 'admin'], function () {
+
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('/categories', [CategoryController::class, 'index'])->name('admin.categories.index');
     Route::get('/categories/create', [CategoryController::class, 'create'])->name('admin.categories.create');
     Route::post('/categories', [CategoryController::class, 'store'])->name('admin.categories.store');
@@ -88,7 +112,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::prefix('admin')->group(function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('/tags', [TagController::class, 'index'])->name('admin.tags.index');
     Route::get('/tags/create', [TagController::class, 'create'])->name('admin.tags.create');
     Route::post('/tags', [TagController::class, 'store'])->name('admin.tags.store');
@@ -98,7 +122,7 @@ Route::prefix('admin')->group(function () {
 });
 
 
-Route::prefix('admin')->group(function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
     Route::get('/blogs/create', [BlogController::class, 'create'])->name('admin.blogs.create');
     Route::post('/blogs', [BlogController::class, 'store'])->name('admin.blogs.store');

@@ -2,38 +2,34 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use App\Traits\Uuids;
+use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class User extends Authenticatable
+// Import trait HasScope
+use App\Traits\HasScope;
+
+class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasApiTokens, HasFactory, Notifiable, Uuids;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles; // Tambahkan HasScope di sini
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
      */
-    protected $primaryKey = "id";
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['name', 'email', 'password',  'avatar'];
 
     /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = ['password', 'remember_token', 'two_factor_secret', 'two_factor_recovery_codes'];
 
     /**
      * The attributes that should be cast.
@@ -42,6 +38,17 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
     ];
+    protected function name(): Attribute
+    {
+        return Attribute::make(set: fn($value) => strtolower($value));
+    }
+
+    protected function avatar(): Attribute
+    {
+        return Attribute::make(get: fn($avatar) => $avatar != '' ? asset('/storage/avatar/' . $avatar) : 'https://ui-avatars.com/api/?name=' . str_replace(' ', '+', $this->name) . '&background=4e73df&color=ffffff&size=100');
+    }
+
+
+  
 }

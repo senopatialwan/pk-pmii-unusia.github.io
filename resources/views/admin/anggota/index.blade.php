@@ -25,6 +25,12 @@
 			<div class="content-body">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
+						<form action="{{ route('admin.blogs.index') }}" method="GET" class="d-flex">
+                            <div class="form-group flex-grow-1 mr-2">
+                                <input type="text" name="search" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>
+                        
 						<div class="table-responsive">
 							<table id="example-1" class="table table-striped dt-responsive display" cellspacing="0" width="100%">
 								<thead>
@@ -52,8 +58,15 @@
                                                     <i class="fa fa-eye"></i> Lihat Lengkap </a>
                                                 <a href="{{route('admin.anggota.edit')}}" class="btn border-none rounded-sm px-4 py-2 btn-warning">
                                                     <i class="fa fa-edit"></i> Edit </a>
-                                                <a href="" class="btn border-none rounded-sm px-4 py-2 btn-danger">
-                                                    <i class="fa fa-trash"></i> Hapus </a>
+													<a href="#" onclick="deleteData({{ $anggota->id }})" class="btn btn-danger btn-sm">
+														<i class="fas fa-trash mr-1"></i>
+														Delete
+													</a>
+													<form id="delete-form-{{ $blog->id }}"
+														action="{{ route('admin.anggota.destroy', $anggota->id) }}" method="POST" style="display:none;">
+														@csrf
+														@method('DELETE')
+													</form>
                                             </td>
                                         </tr>
                                     @endforeach

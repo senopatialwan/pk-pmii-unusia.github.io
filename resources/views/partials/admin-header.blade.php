@@ -299,33 +299,26 @@
             <ul class="info-menu right-links list-inline list-unstyled">
                 <li class="profile">
                     <a href="#" data-toggle="dropdown" class="toggle">
-                        <img src="{{ url(asset('assets/images/pmii/alwan-2.jpeg')) }}" alt="user-image" class="img-circle img-inline" />
-                        <span>M Alwan Abdr <i class="fa fa-angle-down"></i></span>
+                        <img src="{{ Auth::user()->avatar }}" alt="user-image" class="img-circle img-inline" />
+                        <span>{{Auth::user()->name}} <i class="fa fa-angle-down"></i></span>
                     </a>
                     <ul class="dropdown-menu profile animated fadeIn">
+                       
                         <li>
-                            <a href="#settings">
-                                <i class="fa fa-wrench"></i>
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ui-profile.html">
+                            <a href="{{ route('admin.profile.index') }}"> 
                                 <i class="fa fa-user"></i>
                                 Profile
                             </a>
                         </li>
-                        <li>
-                            <a href="#help">
-                                <i class="fa fa-info"></i>
-                                Help
-                            </a>
-                        </li>
+                        
                         <li class="last">
-                            <a href="ui-login.html">
+                            <a href=""  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <i class="fa fa-lock"></i>
                                 Logout
                             </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </li>
