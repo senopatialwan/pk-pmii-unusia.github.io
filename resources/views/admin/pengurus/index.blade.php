@@ -31,6 +31,11 @@
             </header>
             <div class="content-body">
                 <div class="row">
+                    <form action="{{ route('admin.blogs.index') }}" method="GET" class="d-flex">
+                        <div class="form-group flex-grow-1 mr-2">
+                            <input type="text" name="search" class="form-control" placeholder="Search...">
+                        </div>
+                    </form>
                     @foreach ($pengurus as $pengurus)
                         <div class="col-lg-3 col-sm-6 col-md-4 music_genre">
                             <div class="card">
@@ -66,12 +71,11 @@
                                         <div class="btn-group" role="group" aria-label="Basic example">
                                             <a href="{{ route('admin.pengurus.edit', $pengurus->id) }}"
                                                 class="btn btn-primary rounded-md d-inline-block">Edit</a>
-                                            <form action="{{ route('admin.pengurus.destroy', $pengurus->id) }}"
-                                                method="POST" class="d-inline-block">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger rounded-md">Hapus</button>
-                                            </form>
+                                                <form id="delete-form-{{ $blog->id }}"
+                                                    action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" style="display:none;">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                </form>
                                         </div>
                                     </div>
                                 </div>

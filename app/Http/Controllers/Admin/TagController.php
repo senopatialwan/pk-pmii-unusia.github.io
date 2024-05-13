@@ -8,12 +8,12 @@ use App\Http\Controllers\Controller;
 
 class TagController extends Controller
 {
+
     public function index()
     {
         $tags = Tag::all();
         return view('admin.tags.index', compact('tags'));
     }
-
     public function create()
     {
         return view('admin.tags.create');
