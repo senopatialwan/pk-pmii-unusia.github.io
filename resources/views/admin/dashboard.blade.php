@@ -20,23 +20,12 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="r4_counter db_box">
-                            <i class="pull-left fa fa-thumbs-up icon-md icon-rounded icon-primary"></i>
-                            <div class="stats">
-                                <h4>
-                                    <strong>450K</strong>
-                                </h4>
-                                <span>Blog Page Views</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="r4_counter db_box">
                             <i class="pull-left fa fa-user icon-md icon-rounded icon-orange"></i>
                             <div class="stats">
                                 <h4>
                                     <strong>6243</strong>
                                 </h4>
-                                <span>New Visitors</span>
+                                <span>Total Pengunjung</span>
                             </div>
                         </div>
                     </div>
@@ -47,7 +36,7 @@
                                 <h4>
                                     <strong>1000</strong>
                                 </h4>
-                                <span>Database</span>
+                                <span>Data Anggota PMII UNUSIA</span>
                             </div>
                         </div>
                     </div>
@@ -58,7 +47,7 @@
                                 <h4>
                                     <strong>20</strong>
                                 </h4>
-                                <span>Belum Terverifikasi</span>
+                                <span>KTA Belum Terverifikasi</span>
                             </div>
                         </div>
                     </div>
