@@ -71,10 +71,12 @@
                                         <div class="btn-group" role="group" aria-label="Basic example">
                                             <a href="{{ route('admin.pengurus.edit', $pengurus->id) }}"
                                                 class="btn btn-primary rounded-md d-inline-block">Edit</a>
-                                                <form id="delete-form-{{ $blog->id }}"
-                                                    action="{{ route('admin.blogs.destroy', $blog->id) }}" method="POST" style="display:none;">
+                                                <form action="{{ route('admin.pengurus.destroy', $pengurus->id) }}"
+                                                    method="POST" style="display: inline">
                                                     @csrf
                                                     @method('DELETE')
+                                                    <button type="submit" class="btn btn-sm btn-danger"
+                                                        onclick="return confirm('Are you sure you want to delete?')">Delete</button>
                                                 </form>
                                         </div>
                                     </div>

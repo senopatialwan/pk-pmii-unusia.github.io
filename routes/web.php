@@ -14,6 +14,7 @@ use App\Http\Controllers\Pages\PagesBlogController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Pages\PengurusController as LandingPengurusController;
 Route::fallback(function () {
     return view("error.404");
 });
@@ -37,8 +38,12 @@ Route::group(['prefix' => 'anggota'], function () {
     Route::get('{pengurus}', [Anggota::class, 'show'])->name('anggota.show');
 });
 
-Route::view('tim', 'pages.tim')->name('tim');
-Route::view('tim-kopri', 'pages.tim-kopri')->name('tim-kopri');
+
+
+Route::get('/tim', [LandingPengurusController::class, 'index'])->name('tim.index');
+Route::get('/tim-kopri', [LandingPengurusController::class, 'kopri'])->name('tim-kopri');
+
+
 Route::view('blog', 'pages.blog')->name('blog');
 Route::view('single-page', 'pages.single-page')->name('single-page');
 Route::view('tentang', 'pages.tentang')->name('tentang');
@@ -58,7 +63,7 @@ Route::view('daftar', 'auth.daftar')->name('daftar');
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('admin/dashboard', DashboardController::class)->name('admin.dashboard');
+    Route::get('/dashboard', DashboardController::class)->name('admin.dashboard');
 });
 
 

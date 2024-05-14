@@ -13,17 +13,12 @@ class Pengurus extends Model
 
     protected $table = 'pengurus';
     protected $primaryKey = 'id';
-    protected $fillable = [
-        'nama_lengkap',
-        'email',
-        'jabatan',
-        'image',
-        'facebook',
-        'instagram',
-        'twitter',
-        'linkedin',
-    ];
+    protected $fillable = ['nama_lengkap', 'email', 'jabatan', 'image', 'facebook', 'instagram', 'twitter', 'linkedin', 'category_id'];
 
+    public function category()
+    {
+        return $this->belongsTo(CategoryPengurus::class);
+    }
     public function getImageUrlAttribute()
     {
         return Storage::url($this->image);

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pengurus;
+use App\Models\CategoryPengurus; // Tambahkan ini
 use App\Http\Requests\Admin\PengurusRequest;
 
 class PengurusController extends Controller
@@ -16,7 +17,8 @@ class PengurusController extends Controller
 
     public function create()
     {
-        return view('admin.pengurus.create');
+        $categories = CategoryPengurus::all(); // Ambil semua kategori pengurus
+        return view('admin.pengurus.create', compact('categories'));
     }
 
     public function store(PengurusRequest $request)
@@ -33,6 +35,7 @@ class PengurusController extends Controller
         $pengurus->instagram = $request->instagram;
         $pengurus->twitter = $request->twitter;
         $pengurus->linkedin = $request->linkedin;
+        $pengurus->category_id = $request->category_id; // Simpan kategori pengurus
         $pengurus->save();
 
         return redirect()->route('admin.pengurus.index')->with('success', 'Pengurus berhasil ditambahkan.');
@@ -40,12 +43,12 @@ class PengurusController extends Controller
 
     public function edit(Pengurus $pengurus)
     {
-        return view('admin.pengurus.edit', compact('pengurus'));
+        $categories = CategoryPengurus::all(); // Ambil semua kategori pengurus
+        return view('admin.pengurus.edit', compact('pengurus', 'categories'));
     }
 
     public function update(PengurusRequest $request, Pengurus $pengurus)
     {
-        // Tambahkan pernyataan debugging untuk memeriksa data yang dikirimkan dari formulir
         $image = $request->file('image');
 
         if ($image) {
@@ -60,6 +63,7 @@ class PengurusController extends Controller
         $pengurus->instagram = $request->instagram;
         $pengurus->twitter = $request->twitter;
         $pengurus->linkedin = $request->linkedin;
+        $pengurus->category_id = $request->category_id; // Update kategori pengurus
         $pengurus->save();
 
         return redirect()->route('admin.pengurus.index')->with('success', 'Pengurus berhasil diperbarui.');

@@ -102,26 +102,25 @@
                     cancelButton: 'btn btn-danger'
                 },
                 buttonsStyling: true
-            })
-
+            });
+    
             swalWithBootstrapButtons.fire({
-                title: 'Are you sure want delete this?',
+                title: 'Are you sure want to delete this?',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: 'Yes, please!',
                 cancelButtonText: 'Nope!',
                 reverseButtons: true
             }).then((result) => {
-                if (result.value) {
+                if (result.isConfirmed) {
                     event.preventDefault();
                     document.getElementById('delete-form-' + id).submit();
-
                 } else if (
                     /* Read more about handling dismissals below */
                     result.dismiss === Swal.DismissReason.cancel
                 ) {
                     swalWithBootstrapButtons.fire(
-                        'Your data still save !',
+                        'Your data is safe!',
                         '',
                         'error'
                     )
@@ -129,6 +128,7 @@
             })
         }
     </script>
+    
        
 
    
