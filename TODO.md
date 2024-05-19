@@ -12,5 +12,7 @@ Project Description
 
 ### Done ✓
 
+- [x] zen - logo klik ke home  
+- [x] zen - maps  
 - [x] zen - login ke admin/dashboard  
 

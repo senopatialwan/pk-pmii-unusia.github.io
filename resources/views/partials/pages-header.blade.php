@@ -18,7 +18,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <!-- Pastikan path gambar benar -->
                         <img src="{{ asset('assets/images/pmii/logo-web.png') }}" class="logo logo-scrolled"
                             alt="Logo" style="max-width: 10em" />
