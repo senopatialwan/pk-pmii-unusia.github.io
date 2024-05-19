@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Pages\PengurusController as LandingPengurusController;
+
 Route::fallback(function () {
     return view("error.404");
 });
@@ -72,13 +73,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
     Route::get('anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
 });
 
-
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('profile', [ProfileController::class, 'index'])->name('admin.profile.index');
     Route::put('profile/{user}', [ProfileController::class, 'updateProfile'])->name('admin.profile.update');
     Route::put('profile/password/{user}', [ProfileController::class,'updatePassword'])->name('admin.profile.password');
 });
-
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
@@ -106,7 +105,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
     Route::put('categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
     Route::delete('categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.destroy');
 });
-
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     Route::get('tags', [TagController::class, 'index'])->name('admin.tags.index');
