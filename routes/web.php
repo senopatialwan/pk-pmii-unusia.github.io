@@ -70,6 +70,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], func
     Route::get('anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
     Route::get('anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
     Route::get('anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
+    Route::delete('anggota/del/{anggota}', [AdminAnggota::class, 'destroy'])->name('admin.anggota.destroy');
     Route::get('anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
 });
 

@@ -30,7 +30,7 @@
                                 <input type="text" name="search" class="form-control" placeholder="Search...">
                             </div>
                         </form>
-                        
+
 						<div class="table-responsive">
 							<table id="example-1" class="table table-striped dt-responsive display" cellspacing="0" width="100%">
 								<thead>
@@ -56,17 +56,18 @@
                                             <td>
                                                 <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn border-none rounded-sm btn-info px-4 py-2">
                                                     <i class="fa fa-eye"></i> Lihat Lengkap </a>
+
                                                 <a href="{{route('admin.anggota.edit')}}" class="btn border-none rounded-sm px-4 py-2 btn-warning">
                                                     <i class="fa fa-edit"></i> Edit </a>
-													<a href="#" onclick="deleteData({{ $anggota->id }})" class="btn btn-danger btn-sm">
-														<i class="fas fa-trash mr-1"></i>
-														Delete
-													</a>
-													<form id="delete-form-{{ $blog->id }}"
-														action="{{ route('admin.anggota.destroy', $anggota->id) }}" method="POST" style="display:none;">
-														@csrf
-														@method('DELETE')
-													</form>
+
+
+                                                <form action="{{ route('admin.anggota.destroy', $anggota->id) }}"
+                                                    method="POST" style="display: inline">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-sm btn-danger"
+                                                        onclick="return confirm('Apa benar akan dihapus?')">Delete</button>
+                                                </form>
                                             </td>
                                         </tr>
                                     @endforeach

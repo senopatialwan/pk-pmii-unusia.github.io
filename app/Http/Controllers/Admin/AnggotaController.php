@@ -73,9 +73,8 @@ class AnggotaController extends Controller
         //
     }
 
-    public function destroy($id)
+    public function destroy(Anggota $anggota)
     {
-        $anggota = Anggota::findOrFail($id);
         $anggota->delete();
         return redirect()->back();
     }
