@@ -6,13 +6,14 @@ Project Description
 
 ### Todo
 
-- [ ] zen - fix error admin/anggota  
 
 ### In Progress
 
 
 ### Done ✓
 
+- [x] zen - anggota,delete  
+- [x] zen - fix error admin/anggota  
 - [x] zen - logo klik ke home  
 - [x] zen - maps  
 - [x] zen - login ke admin/dashboard  
