@@ -12,6 +12,7 @@ Project Description
 
 ### Done ✓
 
+- [x] zen - update dashboard  
 - [x] zen - anggota,delete  
 - [x] zen - fix error admin/anggota  
 - [x] zen - logo klik ke home  
