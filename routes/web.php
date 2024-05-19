@@ -59,82 +59,70 @@ Route::view('daftar', 'auth.daftar')->name('daftar');
 
 
 // *Admin
-
-
-
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/dashboard', DashboardController::class)->name('admin.dashboard');
+    Route::get('dashboard', DashboardController::class)->name('admin.dashboard');
 });
-
-
-
-
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
     // *anggota
-    Route::get('admin/anggota', [AdminAnggota::class, 'index'])->name('admin.anggota.index');
-    Route::get('admin/anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
-    Route::get('admin/anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
-    Route::get('admin/anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
-    Route::get('admin/anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
+    Route::get('anggota', [AdminAnggota::class, 'index'])->name('admin.anggota.index');
+    Route::get('anggota/tambah-anggota', [AdminAnggota::class, 'create'])->name('admin.anggota.create');
+    Route::get('anggota/edit-anggota', [AdminAnggota::class, 'edit'])->name('admin.anggota.edit');
+    Route::get('anggota/verifikasi-kta', [AdminAnggota::class, 'verifikasiKTA'])->name('admin.anggota.verifikasi-kta');
+    Route::get('anggota/{anggota}', [AdminAnggota::class, 'show'])->name('admin.anggota.show');
 });
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('admin/profile', [ProfileController::class, 'index'])->name('admin.profile.index');
-    Route::put('admin/profile/{user}', [ProfileController::class, 'updateProfile'])->name('admin.profile.update');
-    Route::put('admin/profile/password/{user}', [ProfileController::class,'updatePassword'])->name('admin.profile.password');
+    Route::get('profile', [ProfileController::class, 'index'])->name('admin.profile.index');
+    Route::put('profile/{user}', [ProfileController::class, 'updateProfile'])->name('admin.profile.update');
+    Route::put('profile/password/{user}', [ProfileController::class,'updatePassword'])->name('admin.profile.password');
 });
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
-    Route::get('/pengurus/create', [PengurusController::class, 'create'])->name('admin.pengurus.create');
-    Route::post('/pengurus', [PengurusController::class, 'store'])->name('admin.pengurus.store');
-    Route::get('/pengurus/{pengurus}/edit', [PengurusController::class, 'edit'])->name('admin.pengurus.edit');
-    Route::put('/pengurus/{pengurus}', [PengurusController::class, 'update'])->name('admin.pengurus.update');
-    Route::delete('/pengurus/{pengurus}', [PengurusController::class, 'destroy'])->name('admin.pengurus.destroy');
+    Route::get('pengurus', [PengurusController::class, 'index'])->name('admin.pengurus.index');
+    Route::get('pengurus/create', [PengurusController::class, 'create'])->name('admin.pengurus.create');
+    Route::post('pengurus', [PengurusController::class, 'store'])->name('admin.pengurus.store');
+    Route::get('pengurus/{pengurus}/edit', [PengurusController::class, 'edit'])->name('admin.pengurus.edit');
+    Route::put('pengurus/{pengurus}', [PengurusController::class, 'update'])->name('admin.pengurus.update');
+    Route::delete('pengurus/{pengurus}', [PengurusController::class, 'destroy'])->name('admin.pengurus.destroy');
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/users', [UserController::class, 'index'])->name('admin.users.index');
-    Route::get('/users/create', [UserController::class, 'create'])->name('admin.users.create');
-    Route::post('/users', [UserController::class, 'store'])->name('admin.users.store');
-    Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('admin.users.edit');
-    Route::put('/users/{user}', [UserController::class, 'update'])->name('admin.users.update');
-    Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('admin.users.destroy');
+    Route::get('users', [UserController::class, 'index'])->name('admin.users.index');
+    Route::get('users/create', [UserController::class, 'create'])->name('admin.users.create');
+    Route::post('users', [UserController::class, 'store'])->name('admin.users.store');
+    Route::get('users/{user}/edit', [UserController::class, 'edit'])->name('admin.users.edit');
+    Route::put('users/{user}', [UserController::class, 'update'])->name('admin.users.update');
+    Route::delete('users/{user}', [UserController::class, 'destroy'])->name('admin.users.destroy');
 });
 
-
-
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/categories', [CategoryController::class, 'index'])->name('admin.categories.index');
-    Route::get('/categories/create', [CategoryController::class, 'create'])->name('admin.categories.create');
-    Route::post('/categories', [CategoryController::class, 'store'])->name('admin.categories.store');
-    Route::get('/categories/{category}/edit', [CategoryController::class, 'edit'])->name('admin.categories.edit');
-    Route::put('/categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
-    Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.destroy');
+    Route::get('categories', [CategoryController::class, 'index'])->name('admin.categories.index');
+    Route::get('categories/create', [CategoryController::class, 'create'])->name('admin.categories.create');
+    Route::post('categories', [CategoryController::class, 'store'])->name('admin.categories.store');
+    Route::get('categories/{category}/edit', [CategoryController::class, 'edit'])->name('admin.categories.edit');
+    Route::put('categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
+    Route::delete('categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.destroy');
 });
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/tags', [TagController::class, 'index'])->name('admin.tags.index');
-    Route::get('/tags/create', [TagController::class, 'create'])->name('admin.tags.create');
-    Route::post('/tags', [TagController::class, 'store'])->name('admin.tags.store');
-    Route::get('/tags/{tag}/edit', [TagController::class, 'edit'])->name('admin.tags.edit');
-    Route::put('/tags/{tag}', [TagController::class, 'update'])->name('admin.tags.update');
-    Route::delete('/tags/{tag}', [TagController::class, 'destroy'])->name('admin.tags.destroy');
+    Route::get('tags', [TagController::class, 'index'])->name('admin.tags.index');
+    Route::get('tags/create', [TagController::class, 'create'])->name('admin.tags.create');
+    Route::post('tags', [TagController::class, 'store'])->name('admin.tags.store');
+    Route::get('tags/{tag}/edit', [TagController::class, 'edit'])->name('admin.tags.edit');
+    Route::put('tags/{tag}', [TagController::class, 'update'])->name('admin.tags.update');
+    Route::delete('tags/{tag}', [TagController::class, 'destroy'])->name('admin.tags.destroy');
 });
-
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'role:admin']], function () {
-    Route::get('/blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
-    Route::get('/blogs/create', [BlogController::class, 'create'])->name('admin.blogs.create');
-    Route::post('/blogs', [BlogController::class, 'store'])->name('admin.blogs.store');
-    Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('admin.blogs.edit');
-    Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('admin.blogs.update');
-    Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('admin.blogs.destroy');
-    Route::get('/blogs/{id}', [BlogController::class, 'show'])->name('admin.blogs.show');
+    Route::get('blogs', [BlogController::class, 'index'])->name('admin.blogs.index');
+    Route::get('blogs/create', [BlogController::class, 'create'])->name('admin.blogs.create');
+    Route::post('blogs', [BlogController::class, 'store'])->name('admin.blogs.store');
+    Route::get('blogs/{blog}/edit', [BlogController::class, 'edit'])->name('admin.blogs.edit');
+    Route::put('blogs/{blog}', [BlogController::class, 'update'])->name('admin.blogs.update');
+    Route::delete('blogs/{blog}', [BlogController::class, 'destroy'])->name('admin.blogs.destroy');
+    Route::get('blogs/{id}', [BlogController::class, 'show'])->name('admin.blogs.show');
 });
-
-
