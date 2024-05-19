@@ -7,7 +7,7 @@
 
 
 
-    <!-- Start Welcome 
+    <!-- Start Welcome
         ============================================= -->
     <div class="banner-area content-double text-center background-move bg-gray" style="background-image: url(assets/img/bg-2.png)">
         <div class="container">
@@ -131,7 +131,7 @@
         </div>
     </div>
     <!-- End About-->
-    <!-- Start Database 
+    <!-- Start Database
         ============================================= -->
     <div id="database" class="about-area companies-area text-center bg-gray default-padding">
         <div class="container">
@@ -183,7 +183,7 @@
         </div>
     </div>
     <!-- End Database -->
-    <!-- Start Produk Hukum 
+    <!-- Start Produk Hukum
         ============================================= -->
     <div id="produkHukum" class="features-area carousel-shadow default-padding bottom-less">
         <div class="container">
@@ -304,7 +304,7 @@
         </div>
     </div>
     <!-- End Produk Hukum -->
-    <!-- Start Informasi Kegiatan 
+    <!-- Start Informasi Kegiatan
         ============================================= -->
     <div id="overview" class="overview-area bg-theme text-light default-padding">
         <!-- Side Bg -->
@@ -419,13 +419,13 @@
         </div>
     </div>
     <!-- End Menurut Para Tokoh -->
-    <!-- Start Google Maps 
+    <!-- Start Google Maps
         ============================================= -->
     <div class="maps-area">
         <div class="container-full">
             <div class="row">
                 <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=unusia%20b+(Unusia)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
                 </div>
             </div>
         </div>
