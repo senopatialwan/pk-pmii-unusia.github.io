@@ -51,26 +51,26 @@
                         <h4>Keluarga Besar</h4>
                         <ul>
                             <li>
-                                <a href="#">Rayon FTIK</a>
+                                <a href="/anggota/rayon-ftik">Rayon FTIK</a>
                             </li>
                             <li>
-                                <a href="#">Rayon FKIP</a>
+                                <a href="/anggota/rayon-fkip">Rayon FKIP</a>
                             </li>
                             <li>
-                                <a href="#">Rayon Fajrul Falakh</a>
+                                <a href="/anggota/rayon-ff">Rayon Fajrul Falakh</a>
                             </li>
                             <li>
-                                <a href="#">Rayon Nusantara</a>
+                                <a href="/anggota/rayon-nusantara">Rayon Nusantara</a>
                             </li>
                             <li>
-                                <a href="#">Rayon FEB</a>
+                                <a href="/anggota/rayon-feb">Rayon FEB</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 equal-height item">
                     <div class="f-item twitter-widget">
-                        <h4>Contact Info</h4>
+                        <h4>Alamat Sekretariat</h4>
                         <p>Jl. Parung Hijau Kp. Hambulu, Desa Pondok Udik, Kec. Kemang, Kab. Bogor, Jawa Barat, Indonesia</p>
                         <div class="address">
                             <ul>

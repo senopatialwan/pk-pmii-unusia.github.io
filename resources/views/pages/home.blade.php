@@ -79,7 +79,7 @@
                                         <i class="flaticon-support"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>TUJUAN PMII</h4>
+                                        <h4>PERGERAKAN</h4>
                                         <p>Keadilan, Kemajuan, Kemanusiaan: Landasan Perjuangan PMII Menuju Masa Depan yang Berkeadilan.</p>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@
                                         <i class="flaticon-speech-bubble"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>SEJARAH PMII</h4>
+                                        <h4>MAHASISWA</h4>
                                         <p>Warisan Perjuangan, Inspirasi Masa Depan, Mengabdi pada Kebenaran, Keadilan, dan Kemanusiaan.</p>
                                     </div>
                                 </div>
@@ -102,11 +102,11 @@
                             <div class="col-md-6 col-sm-6 equal-height">
                                 <div class="item">
                                     <div class="icon">
-                                        <i class="flaticon-email"></i>
+                                        <i class="flaticon-video"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>FILOSOFI LOGO PMII</h4>
-                                        <p>Simbol Perjuangan, Ketahanan, Kesetiaan dan Keilmuan Menyatu dalam Logo PMII.</p>
+                                        <h4>ISLAM</h4>
+                                        <p>Simbol Perjuangan, Keyakinan, Kesetiaan dan Keilmuan Menyatu dalam Logo PMII.</p>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                         <i class="flaticon-file"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>TENTANG PMII UNUSIA BOGOR</h4>
+                                        <h4>INDONESIA</h4>
                                         <p>Sejarah dan Semua tentang Pergerakan Kami.</p>
                                     </div>
                                 </div>
@@ -145,32 +145,32 @@
                             <div class="col-md-12">
                                 <div class="clients-items owl-carousel owl-theme text-center">
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/komisariat-unusia">
                                             <img src="assets/img/pmii/logo-pmii.png" style="width: 7em " alt="Clients" />
                                         </a>
                                     </div>
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/rayon-ftik">
                                             <img src="assets/img/pmii/rayon-teknik.png" style="width: 10em" alt="Clients" />
                                         </a>
                                     </div>
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/rayon-fkip">
                                             <img src="assets/img/pmii/rayon-fkip.png" style="width: 7em" alt="Clients" />
                                         </a>
                                     </div>
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/rayon-feb">
                                             <img src="assets/img/pmii/rayon-feb.png" style="width: 9em" alt="Clients" />
                                         </a>
                                     </div>
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/rayon-ff">
                                             <img src="assets/img/pmii/rayon-fajrulfalakh.png" style="width: 10em" alt="Clients" />
                                         </a>
                                     </div>
                                     <div class="single-item">
-                                        <a href="#">
+                                        <a href="/anggota/rayon-nusantara">
                                             <img src="assets/img/pmii/rayon-nusantara.png" style="width: 9em" alt="Clients" />
                                         </a>
                                     </div>
