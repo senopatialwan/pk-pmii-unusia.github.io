@@ -10,7 +10,7 @@ Project Description
 
 ### In Progress
 
-- [ ] alwan - beranda-filosofi logo  
+- [ ] alwan - beranda-tentangPMII  
 
 ### Done ✓
 
