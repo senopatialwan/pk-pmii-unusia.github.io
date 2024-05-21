@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Pages;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Pages\CetakKTARequest;
 use App\Models\Anggota;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
 use App\Models\AngkatanMapaba;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class CetakKTAController extends Controller
 {
@@ -24,12 +26,9 @@ class CetakKTAController extends Controller
             ->where('nim', $request->nim)
             ->first();
 
-        if($anggota->status == 1)
-        {
+        if ($anggota->status == 1) {
             return redirect()->route('cetak-kta.print', $anggota->kta_id);
-        }
-        else
-        {
+        } else {
             return redirect()->back()->with([
                 'message' => 'Masih dalam tahap pengajuan.',
                 'alert-type' => 'danger',
@@ -41,9 +40,18 @@ class CetakKTAController extends Controller
     {
         return view('pages.id-cetak-kta');
     }
+
     public function cetakKTA($kta_id)
     {
         $anggota = Anggota::where('kta_id', $kta_id)->first();
         return view('pages.id-cetak-kta', compact('anggota'));
     }
+
+    public function downloadPDF($kta_id)
+    {
+        $anggota = Anggota::where('kta_id', $kta_id)->first();
+        $pdf = PDF::loadView('pages.kta_pdf', compact('anggota')); // Perbaikan ada di sini
+        return $pdf->download('KTA_PMII_UNUSIA_BOGOR.pdf');
+    }
+    
 }

@@ -50,7 +50,7 @@
                                             <td>{{ $anggota->rayon->nama }}</td>
                                             <td>{{ $anggota->fakultas->nama }}</td>
                                             <td>{{ $anggota->prodi->nama }}</td>
-                                            <td>{{ $anggota->angkatan_mapaba->tahun }}</td>
+                                            <td>{{ $anggota->angkatan_mapaba}}</td>
                                             <td><span>{{ $anggota->status == 1 ? 'Diterima': ($anggota->status == 0 ? 'Belum ditentukan' : 'Ditolak') }}</span></td>
                                             <td>
                                                 <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn btn-info">

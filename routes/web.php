@@ -53,6 +53,9 @@ Route::get('cetak-kta/{kta_id}', [CetakKTAController::class, 'cetakKTA'])->name(
 Route::get('pengajuan-kta', [PengajuanKTAController::class, 'show'])->name('pengajuan-kta');
 Route::view('visi-misi', 'pages.visi-misi')->name('visi-misi');
 
+Route::get('/download-pdf/{kta_id}', [CetakKTAController::class, 'downloadPDF'])->name('download.pdf');
+
+
 
 // *Admin auth
 Route::view('masuk', 'auth.masuk')->name('masuk');

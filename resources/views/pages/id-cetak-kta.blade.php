@@ -101,5 +101,12 @@
         </div>
     </div>
 </main>
-<button class="download-btn">Download PDF</button>
+<button class="download-btn" id="download-btn" data-id="{{ $anggota->kta_id }}">Download PDF</button>
+
+<script>
+    document.getElementById('download-btn').addEventListener('click', function() {
+        var kta_id = this.getAttribute('data-id');
+        window.location.href = '/download-pdf/' + kta_id;
+    });
+</script>
 @endsection

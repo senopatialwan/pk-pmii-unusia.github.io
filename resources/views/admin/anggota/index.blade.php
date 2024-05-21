@@ -52,7 +52,7 @@
                                             <td>{{ $anggota->rayon->nama }}</td>
                                             <td>{{ $anggota->fakultas->nama }}</td>
                                             <td>{{ $anggota->prodi->nama }}</td>
-                                            <td>{{ $anggota->angkatan_mapaba->tahun }}</td>
+                                            <td>{{ $anggota->angkatan_mapaba}}</td>
                                             <td>
                                                 <a href="{{route('admin.anggota.show', $anggota->id)}}" class="btn border-none rounded-sm btn-info px-4 py-2">
                                                     <i class="fa fa-eye"></i> Lihat Lengkap </a>
